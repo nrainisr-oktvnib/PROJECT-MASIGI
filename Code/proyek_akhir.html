@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>PROJEK AKHIR WEB</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active" onclick="navigateTo('beranda.html')">Beranda</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="navigateTo('takmir_masjid.html')">Takmir Masjid</a></li>
+                        <li><a href="#" onclick="navigateTo('pelaksanaan_sholat.html')">Pelaksanaan Sholat Jumat</a></li>
+                        <li><a href="#" onclick="navigateTo('laporan_keuangan.html')">Laporan Keuangan</a></li>
+                    </ul>
+                </li>                
+                <li><a href="#" onclick="navigateTo('donasi.html')">Donasi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu(event, this)">Zakat<i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="navigateTo('zakat_fitrah.html')">Zakat Fitrah</a></li>
+                        <li><a href="#" onclick="navigateTo('zakat_mal.html')">Zakat Mal</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#" onclick="navigateTo('qurban.html')">Qurban</a></li>
+                <li><a href="#" onclick="navigateTo('cara_penggunaan.html')">Cara Penggunaan</a></li>
+                <li><a href="#" onclick="navigateTo('tentang_kami.html')">Tentang Kami</a></li>
+                <li><a href="#" onclick="navigateTo('kontak_kami.html')">Kontak Kami</a></li>
+                <li><button onclick="navigateTo('masuk.html')">Masuk</button></li>
+
+            </ul>
+        </nav>
+    </header>
+    <img src="gambar/binalipu.jpg" alt="Gambar Binalipu" class="centered-image"> 
+    <!-- <section id="beranda">
+        <div class="section-content">
+            <h2>MASIGI (MASJID DIGITAL)</h2>
+            <p></p>
+        </div>
+    </section> -->
+
+    <div class="header-content">
+        <div class="video-container">
+            <video controls="true" muted poster="video/binalipu.jpg">
+                <source src="video/masjid.mp4" type="video/webm">
+            </video>
+        </div>
+        <div class="text-container">
+            <h1>MASIGI (MASJID DIGITAL)</h1>
+            <p class="teks">Website ini digunakan untuk meningkatkan efisiensi, transparansi, dan keterlibatan jamaah dalam pengelolaan masjid. 
+                Dengan memanfaatkan teknologi informasi, pengurus masjid dapat merespons kebutuhan jamaah lebih cepat, mengelola keuangan dengan lebih akurat, 
+                dan menyediakan informasi yang mudah diakses. Transparansi dalam informasi keuangan dan jadwal kegiatan membangun kepercayaan dan 
+                menjadikan pengelolaan masjid lebih akuntabel. Penggunaan teknologi diharapkan juga dapat meningkatkan efisiensi waktu dan sumber daya,
+                memungkinkan pengurus untuk lebih fokus pada aspek keagamaan. Ini membentuk landasan digital yang kokoh untuk pertumbuhan dan perkembangan masjid sebagai pusat kegiatan keagamaan.</p>
+        </div>
+    </div>
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>coming soon</p>
+    </section>
+    
+    <section id="kontak">
+        <h2>Hubungi Saya</h2>
+        <p>coming soon</a>.</p>
+    </section>
+
+
+    <!-- <section id="video">
+        <video controls="true" muted poster="video/binalipu.jpg">
+           <source src="video/masjid.mp4" type="video/webm">
+        </video>
+    </section> -->
+
+    <footer>
+        <p>Hak Cipta &copy; 2024 Halaman MASIGI. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>    
+    <script>
+        function toggleSubMenu(event, item) {
+            event.preventDefault();
+            var submenu = item.nextElementSibling;
+            var iconDown = item.querySelector('.fa-caret-down');
+            iconDown.classList.toggle('hide');
+            submenu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
