@@ -9,42 +9,41 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#" class="active" onclick="navigateTo('beranda.html')">Beranda</a></li>
-                <li>
-                    <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
-                    <ul class="submenu">
-                        <li><a href="#" onclick="navigateTo('takmir_masjid.html')">Takmir Masjid</a></li>
-                        <li><a href="#" onclick="navigateTo('pelaksanaan_sholat.html')">Pelaksanaan Sholat Jumat</a></li>
-                        <li><a href="#" onclick="navigateTo('laporan_keuangan.html')">Laporan Keuangan</a></li>
-                    </ul>
-                </li>                
-                <li><a href="#" onclick="navigateTo('donasi.html')">Donasi</a></li>
-                <li>
-                    <a href="#" onclick="toggleSubMenu(event, this)">Zakat<i class="fa-solid fa-caret-down"></i></a>
-                    <ul class="submenu">
-                        <li><a href="#" onclick="navigateTo('zakat_fitrah.html')">Zakat Fitrah</a></li>
-                        <li><a href="#" onclick="navigateTo('zakat_mal.html')">Zakat Mal</a></li>
-                    </ul>
-                </li>  
-                <li><a href="#" onclick="navigateTo('qurban.html')">Qurban</a></li>
-                <li><a href="#" onclick="navigateTo('cara_penggunaan.html')">Cara Penggunaan</a></li>
-                <li><a href="#" onclick="navigateTo('tentang_kami.html')">Tentang Kami</a></li>
-                <li><a href="#" onclick="navigateTo('kontak_kami.html')">Kontak Kami</a></li>
-                <li><button onclick="navigateTo('masuk.html')">Masuk</button></li>
-
-            </ul>
-        </nav>
-    </header>
-    <img src="gambar/binalipu.jpg" alt="Gambar Binalipu" class="centered-image"> 
-    <!-- <section id="beranda">
-        <div class="section-content">
-            <h2>MASIGI (MASJID DIGITAL)</h2>
-            <p></p>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" onclick="navigateTo('beranda.html')">Beranda</a></li>
+                    <li>
+                        <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" onclick="navigateTo('takmir_masjid.html')">Takmir Masjid</a></li>
+                            <li><a href="#" onclick="navigateTo('pelaksanaan_sholat.html')">Pelaksanaan Sholat Jumat</a></li>
+                            <li><a href="#" onclick="navigateTo('laporan_keuangan.html')">Laporan Keuangan</a></li>
+                        </ul>
+                    </li>                
+                    <li><a href="#" onclick="navigateTo('donasi.html')">Donasi</a></li>
+                    <li>
+                        <a href="#" onclick="toggleSubMenu(event, this)">Zakat<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" onclick="navigateTo('zakat_fitrah.html')">Zakat Fitrah</a></li>
+                            <li><a href="#" onclick="navigateTo('zakat_mal.html')">Zakat Mal</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="toggleSubMenu(event, this)">Qurban<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" onclick="navigateTo('sapi.html')">Sapi</a></li>
+                            <li><a href="#" onclick="navigateTo('kambing.html')">Kambing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="navigateTo('cara_penggunaan.html')">Cara Penggunaan</a></li>
+                    <li><a href="#" onclick="navigateTo('tentang_kami.html')">Tentang Kami</a></li>
+                    <li><a href="#" onclick="navigateTo('kontak_kami.html')">Kontak Kami</a></li>
+                </ul>
+            </nav>
+            <button class="masuk-button" onclick="navigateTo('masuk.html')">Masuk</button>
         </div>
-    </section> -->
-
+    </header>
     <div class="header-content">
         <div class="video-container">
             <video controls="true" muted poster="video/binalipu.jpg">
@@ -67,16 +66,8 @@
     
     <section id="kontak">
         <h2>Hubungi Saya</h2>
-        <p>coming soon</a>.</p>
+        <p>coming soon</p>
     </section>
-
-
-    <!-- <section id="video">
-        <video controls="true" muted poster="video/binalipu.jpg">
-           <source src="video/masjid.mp4" type="video/webm">
-        </video>
-    </section> -->
-
     <footer>
         <p>Hak Cipta &copy; 2024 Halaman MASIGI. Hak Cipta Dilindungi Undang-Undang.</p>
     </footer>    
@@ -87,6 +78,10 @@
             var iconDown = item.querySelector('.fa-caret-down');
             iconDown.classList.toggle('hide');
             submenu.classList.toggle('show');
+        }
+
+        function navigateTo(page) {
+            window.location.href = page;
         }
     </script>
 </body>
