@@ -17,23 +17,38 @@ body {
 }
 
 .wrapper{
+    margin-top: 8rem;
     width: 420px;
-    background: transparent;
-    color: #fff;
+    background: #ffffff;
+    backdrop-filter: blur(20px);
+    color: #000000;
+    box-shadow: 0 0 10px #656565;
     border-radius: 10px;
     padding: 30px 40px;
+
+
 }
 
-img {    
-    width: 100%; 
+img {   
+    width: 80%; 
     height: auto;
-    padding: 30px;
+    padding: 0 50px;
+    margin-left: 35px;
+    margin-bottom: 10px;
 }
 
 
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
+    color:#6f5300;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    margin: 10px 10px;
 }
 
 .wrapper .input-box {
@@ -54,16 +69,16 @@ img {
     background: transparent;
     border: none;
     outline: none;
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     padding: 20px 45px 20px 20px;
 
 }
 
 .input-box input::placeholder {
-    color: #fff;
+    color: #a3a3a3;
 
 }
 
@@ -83,12 +98,12 @@ img {
 }
 
 .remember-forgot label input {
-    accent-color: #fff;
+    accent-color: #000000;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -106,7 +121,7 @@ img {
     box-shadow: 0 0 10px #656565;
     cursor: pointer;
     font-size: 16px;
-    color: #472727;
+    color: #6f5300;
     font-weight: 600;
     margin: 12px 0 10px;
 }
