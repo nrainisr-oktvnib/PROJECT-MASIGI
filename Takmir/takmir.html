@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <form id="formulir-pendaftaran" style="display:none" method="post">
+        <input type="hidden" id="id_mahasiswa" />
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            <div>
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" class="form-input"/>
+            </div>
+            <div>
+                <label>Jenis Kelamin</label>
+                <div class="flex">
+                    <input type="radio" name="jenis_kelamin" id="l" value="Laki-Laki"/> <span>Laki-Laki</span>
+                    <input type="radio" name="jenis_kelamin" id="p" value="Perempuan"/> <span>Perempuan</span>
+                </div>
+            </div>
+            <div>
+                <label for="domisili">Domisili</label>
+                <select id="domisili" name="domisili">
+                    <option value="Parepare">Parepare</option>
+                    <option value="Barru">Barru</option>
+                    <option value="Sidrap">Sidrap</option>
+                    <option value="Pinrang">Pinrang</option>
+                </select>
+            </div>
+            <div>
+                <label for="tempat_lahir">Tempat Lahir</label>
+                <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Masukkan Tempat Lahir" list="daftar_tempat_lahir" />
+                <datalist id="daftar_tempat_lahir">
+                    <option value="Parepare"></option>
+                    <option value="Barru"></option>
+                    <option value="Sidrap"></option>
+                    <option value="Pinrang"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="tanggal_lahir">Tanggal Lahir</label>
+                <input type="date" name="tanggal_lahir" id="tanggal_lahir" />
+            </div>
+            <div>
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" name="alamat" placeholder="Masukkan Alamat">
+            </div>
+            <div>
+                <label for="nomorHP">Nomor HP</label>
+                <input type="text" id="nomorHP" name="nomorHP" placeholder="Masukkan Nomor HP"/>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Masukkan Email"/>
+            </div>
+            <div>
+                <button type="button" name="reset"><i class="fas fa-times"></i> BATAL</button>
+                <button type="submit" name="submit"><i class="fas fa-floppy-disk"></i> SIMPAN </button>
+            </div>
+        </fieldset>
+    </form>
+    <div id="table-container">
+        <button type="button" id="tambah_mahasiswa"><i class="fas fa-user-plus"></i> TAMBAH MAHASISWA</button>
+        <table id="dataTable">
+        </table>
+    </div>
+
+    <script>
+        
+        $(document).ready(function() {
+            $('#dataTable').load('dataTable.html');
+
+        $('#tambah_mahasiswa').click(function() {
+            $('#formulir-pendaftaran').show();
+            $('#table-container').hide();
+            $('#formulir-pendaftaran')[0].reset();
+        });
+
+
+        $('form').submit(function(e) {
+            e.preventDefault();
+            $('#formulir-pendaftaran').hide();
+            $('#table-container').show();
+        
+            const formData = {
+                nama: $('#nama').val(),
+                jenis_kelamin: $('input[name="jenis_kelamin"]:checked').val(),
+                tempat_lahir: $('#tempat_lahir').val(),
+                tanggal_lahir: $('#tanggal_lahir').val(),
+                domisili: $('#domisili').val(),
+                alamat: $('#alamat').val(),
+                nomorHP: $('#nomorHP').val(),
+                email: $('#email').val()
+            };
+        
+            $.ajax({
+                type: 'POST',
+                url: 'insert.php',
+                data: formData,
+                success: function(response) {
+                    alert(response);
+                    $('#dataTable').load('dataTable.html');
+                    $('#formulir-pendaftaran')[0].reset();
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText);
+                    alert('Error occurred. Please try again.');
+                }
+            });
+        });
+
+                $('button[name="reset"]').click(function() {
+                $('#formulir-pendaftaran').hide();
+                $('#table-container').show();
+            });
+        });
+
+    </script>
+</body>
+</html>
