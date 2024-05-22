@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<thead>
+  <tr>
+      <th>Nama</th>
+      <th>Jenis Kelamin</th>
+      <th>Tempat Lahir</th>
+      <th>Tanggal Lahir</th>
+      <th>Domisili</th>
+      <th>Alamat</th>
+      <th>Nomor HP</th>
+      <th>Email</th>
+      <th></th>
+  </tr>
+</thead>
+<tbody id="tbody"></tbody>
+
+<script>
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "select.php",
+        success: function(response) {
+            let daftar_mahasiswa = response.data;
+            console.log({ daftar_mahasiswa });
+
+            if (daftar_mahasiswa.length > 0) {
+                for (let i = 0; i < daftar_mahasiswa.length; i++) {
+                    const mahasiswa = daftar_mahasiswa[i];
+                    const hideButton = `<button class='action-button hide-button' data-id='${mahasiswa.id}'><i class='fas fa-eye'></i> Hide</button>`;
+                    const editButton = `<button class='action-button edit-button' data-id='${mahasiswa.id}'><i class='fas fa-pencil-alt'></i> Edit</button>`;
+                    const deleteButton = `<button class='action-button delete-button' data-id='${mahasiswa.id}'><i class='fas fa-trash-alt'></i> Delete</button>`;
+
+                    $("#tbody").append(
+                        `<tr id='tr-${mahasiswa.id}'>
+                            <td>${mahasiswa.nama}</td>
+                            <td>${mahasiswa.jenis_kelamin}</td>
+                            <td>${mahasiswa.tempat_lahir}</td>
+                            <td>${mahasiswa.tanggal_lahir}</td>
+                            <td>${mahasiswa.domisili}</td>
+                            <td>${mahasiswa.alamat}</td>
+                            <td>${mahasiswa.nomorHP}</td>
+                            <td>${mahasiswa.email}</td>
+                            <td>${hideButton} ${editButton} ${deleteButton}</td>
+                        </tr>`
+                    );
+
+                    $(document).on('click', `.edit-button[data-id='${mahasiswa.id}']`, function() {
+                        $('#nama').val(mahasiswa.nama);
+                        $(`input[name="jenis_kelamin"][value="${mahasiswa.jenis_kelamin}"]`).prop('checked', true);
+                        $('#domisili').val(mahasiswa.domisili);
+                        $('#tempat_lahir').val(mahasiswa.tempat_lahir);
+                        $('#tanggal_lahir').val(mahasiswa.tanggal_lahir);
+                        $('#id').val(mahasiswa.id);
+                        $('#alamat').val(mahasiswa.alamat);
+                        $('#no_telepon').val(mahasiswa.nomorHP);
+                        $('#email').val(mahasiswa.email);
+                        $('#formulir-pendaftaran').show();
+                        $('#table-container').hide();
+                    });
+
+                    // Event handler untuk tombol Delete
+                    $(document).on('click', `.delete-button[data-id='${mahasiswa.id}']`, function() {
+                        var id = $(this).data("id");
+                        var confirmation = confirm("Apakah Anda yakin ingin menghapus data ini?");
+
+                        if (confirmation) {
+                            $.ajax({
+                                type: "POST",
+                                url: "delete.php",
+                                data: { id: id },
+                                dataType: "json",
+                                success: function(response) {
+                                    if (response.success) {
+                                        console.log("Data berhasil dihapus dari server");
+                                        $(`#tr-${id}`).remove(); // Hapus baris tabel
+                                    } else {
+                                        console.error("Gagal menghapus data: " + response.message);
+                                        alert("Gagal menghapus data: " + response.message);
+                                    }
+                                },
+                                error: function(xhr, status, error) {
+                                    console.error("Gagal mengirim permintaan DELETE: " + error);
+                                    alert("Gagal mengirim permintaan DELETE");
+                                }
+                            });
+                        } else {
+                            console.log("Penghapusan data dibatalkan");
+                        }
+                    });
+                }
+            } else {
+                $('#informasi').append("Data Mahasiswa Masih Kosong");
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Gagal mengambil data mahasiswa: ' + error);
+            $('#informasi').append("Gagal mengambil data mahasiswa: " + error);
+        }
+    });
+});
+
+</script>
