@@ -5,21 +5,42 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#d4ad51 0%, #d8a329 40%, #9d7e36 100%);
+    padding: 0;
+    opacity: 0; 
+    animation: fadeIn 1s forwards; 
 }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+header:hover {
+    animation: headerHoverEffect 1s forwards;
+}
+
+@keyframes headerHoverEffect {
+    from {
+        background-color: #9d7e36;
+    }
+    to {
+        background-color: #5c491b;
+    }
+}
+
 
 header {
     background-color: #5c491b;
     color: white;
     padding: 17px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: url('HDLogo.png');
+    background-image: url('logo-putih.png');
     background-repeat: no-repeat;
     background-position: left 10px center;
     background-size: 120px;
-    max-width: 100%;
 }
 
 .header-container {
@@ -31,7 +52,7 @@ header {
 }
 
 .header-container nav {
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 .header-content {
@@ -52,7 +73,7 @@ nav ul {
 }
 
 nav ul li {
-    position: relative;
+    position: relative; 
 }
 
 nav ul li a {
@@ -93,33 +114,33 @@ nav ul li:hover .submenu {
     display: block;
 }
 
-.video-container {
+.video-container { 
     margin-right: 5px;
     margin-top: auto;
     margin-left: 10px;
 }
 
 video {
-    width: 100%;
+    width:90%;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     text-align: justify;
-    margin-top: 10px;
+    margin-top: 200px;
     margin: 10px;
-    margin-right: 800px;
-    max-width: 800px;
-    max-height: 800px;
+    margin-right: 510px;
+    max-width: 500px;  
+    max-height: 1000px; 
 }
 
 .text-container {
     flex: auto;
-    text-align:start;
+    text-align:left;
 }
 
 .text-container h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #926f17;
+    color: #000000;
     margin-left: 100;
 }
 
@@ -135,13 +156,13 @@ section {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
-    text-align: center;
+    text-align: left;
 }
 
 section h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #926f17;
+    color: #000000;
 }
 
 footer {
@@ -149,7 +170,7 @@ footer {
     color: white;
     text-align: center;
     padding: 5px;
-    margin-top: 20px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -164,4 +185,17 @@ footer p {
 
 .fa-caret-down.hide {
     transform: rotate(-180deg);
+}
+
+.svg-content {
+    text-align: center;
+    padding: 20px;
+    width: 80%; /* Atur lebar elemen SVG */
+    max-width: 600px; /* Atur lebar maksimum elemen SVG */
+    margin: 0 auto; /* Pusatkan elemen SVG */
+}
+
+.svg-text {
+    font-size: 1.5em;
+    color: #5c491b;
 }
