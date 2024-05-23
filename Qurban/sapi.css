@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: left;
+    font-size: 50px;
+    overflow: auto;
+}
+
+.header img {
+    width: 215px;
+    height: 129px;
+    float: left;
+    margin-right: 20px;
+}
+
+.sapi {
+    display: inline-block;
+    margin-top: 40px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.sec {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.TA, .TB, .TC {
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+}
+
+.TA h3,
+.TB h3,
+.TC h3 {
+    text-align: center;
+}
+
+.Spek {
+    margin-top: 10px;
+}
+
+.Spek li {
+    margin-bottom: 5px;
+}
