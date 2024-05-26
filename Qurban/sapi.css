@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9d7e36;
+}
+
+.kambing {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    margin-bottom: -3rem;
+}
+
+.tipe-kambing {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+    margin-bottom: -4rem;
+}
+
+.KA, .KB, .KC {
+    font-size: 14px;
+    /*border: 1px solid #ccc;*/
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    margin: 9px;
+    /*box-shadow: 1px 1px 10px #ccc;*/
+    padding-top: 15px;
+    background-color: #fff;
+}
+
+.KA h3, .KB h3, .KC h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.KA h4, .KA span {
+    margin-bottom: 2px;
+}
+
+.KB h4, .KB span {
+    margin-bottom: 2px;
+}
+
+.KC h4, .KC span {
+    margin-bottom: 2px;
+}
+
+.Spesifikasi h4 {
+    margin-bottom: 4px;
+}
+
+.Spesifikasi li {
+    margin-top: 5px;
+}
+
+
+
+.sapi {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    margin-bottom: -3rem;
+}
+
+.sec {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.SA, .SB, .SC {
+    font-size: 14px;
+    /*padding: 15px;*/
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    margin: 9px;
+    /*box-shadow: 1px 1px 10px #ccc;*/
+    background-color: #fff;
+    /*color: #fff;*/
+}
+
+.SA h3, .SB h3, .SC h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.SA h4, .SA span {
+    margin-bottom: 2px;
+}
+
+.SB h4, .SB span {
+    margin-bottom: 2px;
+}
+
+.SC h4, .SC span {
+    margin-bottom: 2px;
+}
+
+/*.Spek {
+    margin-top: 10px;
+}*/
+
+.Spek h4 {
+    margin-bottom: 4px;
+}
+
+.Spek li {
+    margin-top: 5px;
+}
+
