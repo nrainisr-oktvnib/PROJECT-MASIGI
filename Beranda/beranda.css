@@ -6,15 +6,19 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(#d4ad51 0%, #d8a329 40%, #9d7e36 100%);
+    background-image: url('bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
     padding: 0;
-    opacity: 0; 
-    animation: fadeIn 1s forwards; 
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
+
 
 @keyframes fadeIn {
     to {
-        opacity: 1; 
+        opacity: 1;
     }
 }
 
@@ -31,21 +35,19 @@ header:hover {
     }
 }
 
-
 header {
-    background-color: #5c491b;
     color: white;
     padding: 17px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-image: url('logo-putih.png');
     background-repeat: no-repeat;
     background-position: left 10px center;
-    background-size: 120px;
+    background-size: 100px;
 }
 
 .header-container {
     display: flex;
-    align-items: center; 
+    align-items: center;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 10px;
@@ -57,13 +59,12 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     max-width: 1500px;
     margin: 0px auto;
     padding: 0 20px;
 }
-
 
 nav ul {
     list-style: none;
@@ -73,7 +74,7 @@ nav ul {
 }
 
 nav ul li {
-    position: relative; 
+    position: relative;
 }
 
 nav ul li a {
@@ -83,10 +84,12 @@ nav ul li a {
     display: block;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
+    font-size: 15px;
 }
 
 nav ul li a:hover, nav ul li a.active {
     background-color: #e2b952;
+    text-decoration: none;
 }
 
 nav ul .submenu {
@@ -114,39 +117,66 @@ nav ul li:hover .submenu {
     display: block;
 }
 
-.video-container { 
+.video-container {
     margin-right: 5px;
     margin-top: auto;
     margin-left: 10px;
 }
 
 video {
-    width:90%;
+    width: 90%;
     border-radius: 5px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     text-align: justify;
     margin-top: 200px;
     margin: 10px;
     margin-right: 510px;
-    max-width: 500px;  
-    max-height: 1000px; 
+    max-width: 500px;
+    max-height: 1000px;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-moz-media-controls {
+    display: none !important;
+}
+
+video::-ms-media-controls {
+    display: none !important;
+}
+
+.video-container:hover video::-webkit-media-controls {
+    display: block !important;
+}
+
+.video-container:hover video::-moz-media-controls {
+    display: block !important;
+}
+
+.video-container:hover video::-ms-media-controls {
+    display: block !important;
 }
 
 .text-container {
     flex: auto;
-    text-align:left;
+    text-align: left;
+    font-size: small;
+    margin-top: 4%;
 }
 
 .text-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
     color: #000000;
-    margin-left: 100;
+    margin-left: 60px;
 }
 
 .text-container p.teks {
-    font-size: 1.1em;
+    font-size: 1rem;
     line-height: 1.6;
+    font-weight: bold;
     text-align: justify;
     margin: 0;
     color: #090909;
@@ -169,14 +199,23 @@ footer {
     background-color: #5c491b;
     color: white;
     text-align: center;
-    padding: 5px;
-    margin-top: 200px;
+    padding: 1px;
+    margin-top: 400px;
 }
 
 footer p {
     margin: 0;
 }
 
+footer .icons {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+footer .icons a {
+    color: #fff; 
+}
 
 .fa-caret-down {
     margin-left: 5px;
@@ -190,12 +229,141 @@ footer p {
 .svg-content {
     text-align: center;
     padding: 20px;
-    width: 80%; /* Atur lebar elemen SVG */
-    max-width: 600px; /* Atur lebar maksimum elemen SVG */
-    margin: 0 auto; /* Pusatkan elemen SVG */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.svg-text {
+.svg-content h2 {
     font-size: 1.5em;
     color: #5c491b;
+    margin-bottom: 20px;
+}
+
+.svg-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.svg-content th, .svg-content td {
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.svg-content th {
+    background-color: #5c491b;
+    color: white;
+}
+
+.svg-content tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.svg-content tr:hover {
+    background-color: #ddd;
+}
+
+.svg-content td {
+    text-align: center;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#image-and-quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300%;
+    max-width: 800px;
+}
+
+#image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#image-container img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+#image-navigation {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#image-navigation .fas {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#caption {
+    margin-top: 10px;
+}
+
+.quote-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .video-container {
+        margin-right: 5px;
+        margin-top: 1000px;
+        margin-left: 10px;
+        width: 10%;
+        border-radius: 5px;
+        box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+        text-align: justify;
+        margin-top: 200px;
+        margin: 10px;
+        margin-right: 510px;
+        max-width: 500px;
+        max-height: 1000px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        padding: 10px;
+        width: 100%;
+        text-align: right;
+    }
+
+    .text-container h1 {
+        font-size: 1.5em;
+    }
+
+    .text-container p.teks {
+        font-size: 0.9em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
 }
