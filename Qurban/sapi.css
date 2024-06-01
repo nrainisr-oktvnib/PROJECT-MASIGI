@@ -2,7 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #9d7e36;
+    /*background-color: #e2b952;*/
+}
+
+.custom-shape-divider-top-1717222582 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1717222582 svg {
+    position: relative;
+    display: block;
+    width: calc(183% + 3px);
+    height: 550px;
+}
+
+.custom-shape-divider-top-1717222582 .shape-fill {
+    fill: #e2b952;
 }
 
 .kambing {
@@ -25,13 +47,13 @@ body {
 .KA, .KB, .KC {
     font-size: 14px;
     /*border: 1px solid #ccc;*/
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
     padding: 15px;
     margin: 9px;
     /*box-shadow: 1px 1px 10px #ccc;*/
     padding-top: 15px;
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 .KA h3, .KB h3, .KC h3 {
@@ -80,12 +102,12 @@ body {
 .SA, .SB, .SC {
     font-size: 14px;
     /*padding: 15px;*/
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
     padding: 15px;
     margin: 9px;
     /*box-shadow: 1px 1px 10px #ccc;*/
-    background-color: #fff;
+    /*background-color: #e2b952;*/
     /*color: #fff;*/
 }
 
@@ -118,3 +140,91 @@ body {
     margin-top: 5px;
 }
 
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    /*border: 1px solid #ccc;*/
+    border: none;
+    border-radius: 5px;
+    background-color: #e2b952;
+}
+
+.container div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="nama-peserta"],
+input[type="tel"],
+input[type="Alamat"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+input[type="nama-peserta"]:focus,
+input[type="tel"]:focus,
+input[type="Alamat"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input::placeholder,
+select {
+    color: #aaa;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #000;
+}
+
+select:disabled {
+    color: #aaa;
+}
+
+.nama-peserta, .jenis-qurban, .Alamat {
+    margin-bottom: 20px;
+}
+
+.Alamat {
+    margin-top: 18px;
+}
+
+.nama-peserta label,
+.jenis-qurban label,
+.Alamat label,
+.NoTlp label {
+    margin-bottom: -1rem;
+    /*margin-top: 2px;*/
+}
+
+.Alamat,
+.NoTlp {
+    display: none;
+}
+
+#jenis-qurban:valid ~ .Alamat,
+#jenis-qurban:valid ~ .NoTlp {
+    display: block;
+
+footer {
+    /*background: linear-gradient(#af8928 0%, #93721f 100%)*/
+    color: fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    width: 100%;
+}
