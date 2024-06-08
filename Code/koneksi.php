@@ -1,5 +1,8 @@
 <?php
-$host = "localhost";
-$user =  "root";
-$pass = " ";
-$db = "proyekakhir";
+$conn = mysqli_connect("localhost","root", "", "loginn");
+
+if (mysqli_connect_errno()) {
+    echo "koneksi database error:". mysqli_connect_errno();
+}
+
+?>
