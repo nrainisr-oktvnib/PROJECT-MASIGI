@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    /*background: #5c491b;*/
+    background: #f5f5f5;
+}
+
+.struktur {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.struktur ul {
+    padding-top: 20px;
+    position: relative;
+    transition: .5s;
+}
+
+.struktur li {
+    display: inline-table;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 10px;
+    transition: .5s;
+}
+
+.struktur li:before,
+.struktur li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #ccc;
+    width: 51 px;
+    height: 10px;
+}
+
+.struktur li:after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+}
+
+.struktur li:penasehat:after,
+.struktur li:penasehat:before {
+    display: none;
+}
+
+.struktur li:penasehat {
+    padding-top: 0;
+}
+
+.struktur li:first-ketua:before,
+.struktur li:last-ketua:after {
+    border: 0 none;  
+}
+
