@@ -5,36 +5,42 @@ body {
     /*background-color: #e2b952;*/
 }
 
-.custom-shape-divider-top-1717222582 {
+.custom-shape-divider-top-1717226660 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
-    z-index: -1;
+    transform: scaleX(-1);
+    margin-top: 52.6rem;
 }
 
-.custom-shape-divider-top-1717222582 svg {
+.custom-shape-divider-top-1717226660 svg {
     position: relative;
     display: block;
-    width: calc(183% + 3px);
-    height: 550px;
+    width: calc(163% + 1.3px);
+    height: 146px;
 }
 
-.custom-shape-divider-top-1717222582 .shape-fill {
+.custom-shape-divider-top-1717226660 .shape-fill {
     fill: #e2b952;
 }
 
+.tipe-kambing, .sec {
+    border: none;
+    background-color: #e2b952;
+}
+
 .kambing {
-    display: flex;
+    /*display: flex;*/
     font-weight: bold;
     align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    margin-bottom: -3rem;
+    /*justify-content: center;*/
+    margin-top: -3rem;
+    /*padding-top: 1rem;*/
+    /*margin-bottom: -3rem;*/
+    position: absolute;
 }
 
 .tipe-kambing {
@@ -51,9 +57,13 @@ body {
     border: none;
     padding: 15px;
     margin: 9px;
-    /*box-shadow: 1px 1px 10px #ccc;*/
+    box-shadow: 4px 4px 10px #fff;
     padding-top: 15px;
-    /*background-color: #fff;*/
+    background-color: #fff;
+}
+
+.KA:hover, .KB:hover, .KC:hover {
+    background-color: #f0cd75;
 }
 
 .KA h3, .KB h3, .KC h3 {
@@ -81,16 +91,15 @@ body {
     margin-top: 5px;
 }
 
-
-
 .sapi {
-    display: flex;
+    /*display: flex;*/
     font-weight: bold;
     align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    margin-bottom: -3rem;
+    /*justify-content: center;*/
+    margin-top: -3rem;
+    /*padding-top: 1rem;*/
+    /*margin-bottom: -3rem;*/
+    position: absolute;
 }
 
 .sec {
@@ -101,14 +110,18 @@ body {
 
 .SA, .SB, .SC {
     font-size: 14px;
-    /*padding: 15px;*/
+    padding: 12px;
     border-radius: 5px;
     border: none;
     padding: 15px;
     margin: 9px;
-    /*box-shadow: 1px 1px 10px #ccc;*/
-    /*background-color: #e2b952;*/
+    box-shadow: 4px 4px 10px #fff;
+    background-color: #fff;
     /*color: #fff;*/
+}
+
+.SA:hover, .SB:hover, .SC:hover {
+background-color: #f0cd75;
 }
 
 .SA h3, .SB h3, .SC h3 {
@@ -128,10 +141,6 @@ body {
     margin-bottom: 2px;
 }
 
-/*.Spek {
-    margin-top: 10px;
-}*/
-
 .Spek h4 {
     margin-bottom: 4px;
 }
@@ -144,10 +153,10 @@ body {
     width: 50%;
     margin: 0 auto;
     padding: 20px;
-    /*border: 1px solid #ccc;*/
     border: none;
     border-radius: 5px;
     background-color: #e2b952;
+    margin-top: 100px;
 }
 
 .container div {
