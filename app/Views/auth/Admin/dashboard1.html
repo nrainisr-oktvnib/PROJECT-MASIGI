@@ -24,7 +24,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/app/Views/auth/Admin/dashboard1.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/app/Views/auth/Admin/dashboard.html">
                 <div class="sidebar-brand-icon">
                     <img src="/public/img/logo-putih-shadow.png" alt="logo" id="logo"/>
                 </div>
@@ -131,13 +131,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">
-                        <main>
-                            <div id="content-container" class="content-container">
-                                <!-- Konten dari page.html akan dimuat di sini -->
-                            </div>
-                        </main>
-                    </h1>
+                    <h1 class="h3 mb-4 text-gray-800">Selamat Datang, Admin!</h1>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -195,15 +189,6 @@
     <script src="/public/temp1/js/demo/chart-area-demo.js"></script>
     <script src="/public/temp1/js/demo/chart-pie-demo.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch('/app/Views/auth/login/registrasi.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('content-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error:', error));
-        });
-    </script>
+
 
 </html>
