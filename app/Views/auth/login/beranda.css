@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('bg.png');
+    background-image: url('/public/img/bg.png');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -39,7 +39,7 @@ header {
     color: white;
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: url('HDLogo.png');
+    background-image: url('/public/img/logo-putih-shadow.png');
     background-repeat: no-repeat;
     background-position: left 10px center;
     background-size: 100px;
@@ -69,7 +69,7 @@ header {
     padding: 0 20px;
     text-align: center;
     font-style: italic;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 nav ul {
@@ -124,25 +124,25 @@ nav ul li:hover .submenu {
 }
 
 .login-button {
-    background: linear-gradient(135deg, #000000, #434343);
-    color: white;
-    padding: 10px 30px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 7px 13px;
     border: none;
     border-radius: 8px;
     text-decoration: none;
     font-size: 16px;
     font-family: 'Arial', 'Helvetica', sans-serif;
-    margin-left: auto;
+    margin-left: 80%;
     display: block;
     width: fit-content;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .login-button:hover {
-    background: linear-gradient(135deg, #98751d, #af8928);
+    background: linear-gradient(135deg, #e2b952, #af8928);
     transform: scale(1.05);
+    color: #fff;
 }
 
 
@@ -234,7 +234,7 @@ section h2 {
 }
 
 .contact-map-container {
-    background-image: url("wave.png");
+    background-image: url("/public/img/wave.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -296,7 +296,7 @@ section h2 {
     transform: translateY(-50%);
     font-size: 11px;
     z-index: 1;
-    color: #000000;
+    color: #ffffff;
     font-style: italic;
 }
 
@@ -307,10 +307,18 @@ section h2 {
 
 .contact-text img.footer-logo {
     max-width: 150px;
-    margin-top: 10px;
+    margin-top: 30px;
     align-items: right;
     margin-right: 100%;
     margin-bottom: 8%;
+    margin-right: 90%;
+}
+
+.contact-text p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4px;
 }
 
 .social-icons {
