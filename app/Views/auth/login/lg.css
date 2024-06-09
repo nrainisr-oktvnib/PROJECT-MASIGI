@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.bg-login-image {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.text-gray-900 {
+    color: #3a3b45 !important;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border: 1px solid #d1d3e2;
+    border-radius: 5px;
+    height: 45px;
+    padding: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-control-user {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-user {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2e59d9;
+    border-color: #2653d4;
+}
+
+.btn-block {
+    display: block;
+    width: 90%;
+    align-items: center;
+}
+
+.small {
+    font-size: 0.875rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.border-0 {
+    border: 0 !important;
+}
