@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.judul, .judul-pendaftaran {
+    text-align: center;
+}
+
+.tipe-kambing, .sec {
+    border: none;
+    background-color: #fff;
+}
+
+
+/*.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    padding-left: 45px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+}*/
+
+.tipe-kambing {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+    box-shadow: 4px 4px 10px #fff;
+}
+
+.kambing {
+    font-weight: bold;
+    text-align: center;
+    margin-top: -3rem;
+    position: absolute;
+}
+
+/*.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    padding-left: 45px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+}*/
+
+.KA, .KB, .KC {
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin: 9px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px #fff;
+    padding-top: 15px;
+    background-color: #e2b952;
+}
+
+.KA:hover, .KB:hover, .KC:hover {
+    background-color: #f0cd75;
+}
+
+.KA h3, .KB h3, .KC h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.KA h4, .KA span {
+    margin-bottom: 2px;
+}
+
+.KB h4, .KB span {
+    margin-bottom: 2px;
+}
+
+.KC h4, .KC span {
+    margin-bottom: 2px;
+}
+
+.Spesifikasi h4 {
+    margin-bottom: 4px;
+}
+
+.Spesifikasi li {
+    margin-top: 5px;
+}
+
+.sapi {
+    font-weight: bold;
+    text-align: center;
+    margin-top: -3rem;
+    position: absolute;
+}
+
+.sec {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.SA, .SB, .SC {
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin: 9px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px #fff;
+    background-color: #e2b952;
+}
+
+.SA:hover, .SB:hover, .SC:hover {
+background-color: #f0cd75;
+}
+
+.SA h3, .SB h3, .SC h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.SA h4, .SA span {
+    margin-bottom: 2px;
+}
+
+.SB h4, .SB span {
+    margin-bottom: 2px;
+}
+
+.SC h4, .SC span {
+    margin-bottom: 2px;
+}
+
+.Spek h4 {
+    margin-bottom: 4px;
+}
+
+.Spek li {
+    margin-top: 5px;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="nama-peserta"],
+input[type="tel"],
+input[type="Alamat"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: #e2b952;
+}
+
+input[type="nama-peserta"]:focus,
+input[type="tel"]:focus,
+input[type="Alamat"]:focus,
+select:focus {
+    outline: none;
+}
+
+input::placeholder,
+select {
+    color: #e6e1e1;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #000;
+}
+
+select:disabled {
+    color: #aaa;
+}
+
+.Alamat {
+    margin-top: 18px;
+}
+
+.jenis-qurban option {
+    background-color: #fff;
+}
+
+.nama-peserta label,
+.jenis-qurban label,
+.Alamat label,
+.NoTlp label {
+    margin-bottom: -1rem;
+}
+
+.Alamat,
+.NoTlp {
+    display: none;
+}
+
+#jenis-qurban:valid ~ .Alamat,
+#jenis-qurban:valid ~ .NoTlp {
+    display: block;
+}
+
+.daftar-button {
+    width: 20%;
+    padding: 9px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 40%;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #e2b952;
+}
+
+.daftar-button:hover {
+    background-color: #584134;
+}
