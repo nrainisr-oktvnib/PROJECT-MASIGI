@@ -20,17 +20,17 @@
                     <li>
                         <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
                         <ul class="submenu">
-                            <li><a href="#" onclick="navigateTo('/app/views/auth/Takmir/takmir.html')">Takmir Masjid</a></li>
+                            <li><a href="#" onclick="navigateTo('/app/Views/auth/Takmir/TakmirUmum.html')">Takmir Masjid</a></li>
                             <li><a href="#" onclick="navigateTo('pelaksanaan_sholat.html')">Pelaksanaan Sholat Jumat</a></li>
                             <li><a href="#" onclick="navigateTo('laporan_keuangan.html')">Laporan Keuangan</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" onclick="navigateTo('/app/views/auth/Zakat/zakat.html')">Zakat</a></li>
-                    <li><a href="#" onclick="navigateTo('/app/views/auth/Qurban/sapi.html')">Qurban</a></li>
+                    <li><a href="#" onclick="navigateTo('/app/Views/auth/Zakat/zakat.html')">Zakat</a></li>
+                    <li><a href="#" onclick="navigateTo('/app/Views/auth/Qurban/sapi.html')">Qurban</a></li>
                     <li><a href="#" onclick="navigateTo('donasi.html')">Donasi</a></li>
                     <li><a href="#" onclick="navigateTo('cara_penggunaan.html')">Cara Penggunaan</a></li>
                     <li><a href="#" onclick="navigateTo('tentang_kami.html')">Tentang Kami</a></li>
-                    <li style="margin-left:auto;"><a href="#" class="login-button" onclick="navigateTo('/app/views/auth/login/loginn.html')">Masuk</a></li>
+                    <li style="margin-left:auto;"><a href="#" class="login-button" onclick="navigateTo('loginn.html')">Masuk</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,7 +43,7 @@
             <audio id="myAudio">
                 <source src="/public/audio/MASIGI.mp3" type="audio/mpeg">
             </audio>
-            <p>*ARAHKAN KURSOR KE VIDEO TERUS KLIK SPASI UNTUK MEMAINKAN VIDEO*</p>
+            <p>*KLIK SPASI UNTUK MEMAINKAN VIDEO*</p>
         </div>
         <div class="text-container">
             <h1>ASSALAMU'ALAIKUM WARAHMATULLAHI WABARAKATUH</h1>
@@ -100,7 +100,7 @@
         <h4>Beberapa gambar masjid Binalipu Kota Parepare</h4>
         <div id="image-and-quote-container">
             <div id="image-container">
-                <img id="main-image" src="/public/img/binalipu1.jpg">
+                <img id="main-image" src="/public/img/binalipu1.jpg" >
                 <div id="image-navigation">
                     <i class="fas fa-chevron-left" onclick="previousImage()"></i>
                     <i class="fas fa-chevron-right" onclick="nextImage()"></i>
