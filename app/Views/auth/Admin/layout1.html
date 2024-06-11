@@ -132,11 +132,11 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">
-                        <main>
-                            <div id="content-container" class="content-container">
-                                <!-- Konten dari page.html akan dimuat di sini -->
-                            </div>
-                        </main>
+
+
+
+
+
                     </h1>
 
                 </div>
@@ -195,15 +195,6 @@
     <script src="/public/temp1/js/demo/chart-area-demo.js"></script>
     <script src="/public/temp1/js/demo/chart-pie-demo.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch('/app/Views/auth/login/registrasi.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('content-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error:', error));
-        });
-    </script>
+
 
 </html>
