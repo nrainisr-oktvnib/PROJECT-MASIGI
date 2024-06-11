@@ -24138,4 +24138,10 @@ dl li {
 #welcome{
   color: #067900;
 }
-/*# sourceMappingURL=maps/style.css.map */
+
+.content-wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
