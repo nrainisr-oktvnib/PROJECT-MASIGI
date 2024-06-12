@@ -21,16 +21,16 @@
                         <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
                         <ul class="submenu">
                             <li><a href="#" onclick="navigateTo('/app/Views/auth/Takmir/TakmirUmum.html')">Takmir Masjid</a></li>
-                            <li><a href="#" onclick="navigateTo('pelaksanaan_sholat.html')">Pelaksanaan Sholat Jumat</a></li>
-                            <li><a href="#" onclick="navigateTo('laporan_keuangan.html')">Laporan Keuangan</a></li>
+                            <li><a href="#" onclick="navigateTo('/app/Views/auth/JPSJ/jadwal.html')">Pelaksanaan Sholat Jum'at</a></li>
+                            <li><a href="#" onclick="navigateTo('/app/Views/auth/LaporanKeuangan/uang.html')">Laporan Keuangan</a></li>
                         </ul>
                     </li>
                     <li><a href="#" onclick="navigateTo('/app/Views/auth/Zakat/zakat.html')">Zakat</a></li>
                     <li><a href="#" onclick="navigateTo('/app/Views/auth/Qurban/sapi.html')">Qurban</a></li>
                     <li><a href="#" onclick="navigateTo('donasi.html')">Donasi</a></li>
-                    <li><a href="#" onclick="navigateTo('cara_penggunaan.html')">Cara Penggunaan</a></li>
-                    <li><a href="#" onclick="navigateTo('tentang_kami.html')">Tentang Kami</a></li>
-                    <li style="margin-left:auto;"><a href="#" class="login-button" onclick="navigateTo('loginn.html')">Masuk</a></li>
+                    <li><a href="#" onclick="navigateTo('/app/Views/auth/Tutor/tutor.html')">Cara Penggunaan</a></li>
+                    <li><a href="#" onclick="navigateTo('/app/Views/auth/TentangKami/tentang.html')">Tentang Kami</a></li>
+                    <li style="margin-left:auto;"><a href="#" class="login-button" onclick="navigateTo('/app/Views/auth/login/loginn.html')">Masuk</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,7 +43,7 @@
             <audio id="myAudio">
                 <source src="/public/audio/MASIGI.mp3" type="audio/mpeg">
             </audio>
-            <p>*KLIK SPASI UNTUK MEMAINKAN VIDEO*</p>
+            <p>*ARAHKAN KURSOR KE GAMBAR LALU KLIK DAN SPASI UNTUK MEMAINKAN VIDEO*</p>
         </div>
         <div class="text-container">
             <h1>ASSALAMU'ALAIKUM WARAHMATULLAHI WABARAKATUH</h1>
@@ -140,7 +140,7 @@
         <p>Hak Cipta &copy; 2024 Halaman MASIGI.</p> 
     </footer>    
     <script>
-        var images = ["binalipu1.jpg",  "binalipu4.jpg", "binalipu5.jpg", "binalipu6.jpg"];
+        var images = ["/public/img/binalipu1.jpg",  "/public/img/binalipu4.jpg", "/public/img/binalipu5.jpg", "/public/img/binalipu6.jpg"];
         var currentImageIndex = 0;
 
         function nextImage() {
