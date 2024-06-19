@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="keuangan.css">
+    <title>PROJEK AKHIR WEB</title>
+</head>
+<body>
+    <div class="judul">
+        <h1>Keuangan</h1>
+    </div>
+    <section class="container">
+        <div class="jenis-kategori">
+            <label for="kategori"><h4>Kategori:</h4></label>
+            <select name="jenis" id="jenis-kategori">
+                <option value="" disabled selected>Pilih Jenis Kategori</option>
+                <option value="pemasukan">Pemasukan</option>
+                <option value="pengeluaran">Pengeluaran</option>
+            </select>
+        </div>
+
+        <div class="input-tanggal">
+            <label for="tanggal"><h4>Tanggal:</h4></label>
+            <input type="tanggal" id="tanggal" placeholder="Masukkan Tanggal">
+        </div>
+
+        <div class="input-uraian">
+            <label for="uraian"><h4>Uraian:</h4></label>
+            <input type="uraian" id="uraian" placeholder="Masukkan Nama Uraian">
+        </div>
+
+        <div class="input-nominal">
+            <label for="nominal"><h4>Nominal:</h4></label>
+            <input type="nominal" id="nominal" placeholder="Masukkan Nominal">
+        </div>
+
+        <button type="submit" class="simpan-button">Simpan</button>
+    </section>
+</body>
+</html>
