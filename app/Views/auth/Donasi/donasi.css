@@ -46,10 +46,6 @@ body {
     outline: none;
 }
 
-.jenis-pembayaran option {
-    background-color: #fff;
-}
-
 .simpan-button {
     width: 20%;
     padding: 9px;
