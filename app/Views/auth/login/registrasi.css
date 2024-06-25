@@ -1,0 +1,129 @@
+body, h1, p, input, select, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 60px; 
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-gray-900 {
+    color: #333;
+}
+
+.bg-login-image {
+    width: 30px; 
+    height: 10px; 
+    margin-bottom: 5px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px; 
+    margin: 5px 0 8px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 13px; 
+}
+
+.form-control-user {
+    padding: 12px; 
+    font-size: 14px; 
+}
+
+.form-group {
+    margin-bottom: 10px; 
+}
+
+.form-group.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.form-group .col-sm-6 {
+    flex: 1;
+    min-width: 180px; 
+}
+
+.btn {
+    background: #9d7e36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px; 
+    cursor: pointer;
+    font-size: 14px; 
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #5c491b;
+}
+
+.btn-user {
+    width: 100%;
+    padding: 12px 0; 
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.o-hidden {
+    overflow: hidden !important;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+.my-5 {
+    margin-top: 2rem !important; 
+    margin-bottom: 2rem !important; 
+}
+
+.p-3 {
+    padding: 0.5rem !important; 
+}
+
+.p-0 {
+    padding: 0 !important;
+}
