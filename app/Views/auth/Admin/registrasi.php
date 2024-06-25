@@ -1,11 +1,17 @@
+<?= $this->extend('auth/Admin/layout1'); ?>
+
+<?= $this->section('content'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="lg.css">
     <title>REGISTRASI TAKMIR</title>
 </head>
+
 <body>
     <div class="container">
         <div class="row justify-content-center">
@@ -16,10 +22,10 @@
                             <div class="col-lg-12">
                                 <div class="p-3">
                                     <div class="text-center">
-                                        <img src="/public/img/logo-black-shadow.png" alt="Logo hitam" class="bg-login-image">
+                                        <img src="/img/logo-black-shadow.png" alt="Logo hitam" class="bg-login-image">
                                         <h1 class="h4 text-gray-900 mb-3">Registrasi Akun Takmir</h1>
                                     </div>
-                                    <form class="user" action ="registrasi.php" method="post">
+                                    <form class="user" action="registrasi.php" method="post">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user" id="inputFullName" name="nama_lengkap" placeholder="Nama Lengkap">
                                         </div>
@@ -81,6 +87,9 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>
+
+<?= $this->endSection(); ?>
