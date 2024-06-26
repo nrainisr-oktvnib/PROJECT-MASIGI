@@ -6,12 +6,12 @@
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('/public/img/bg.png');
-    background-size: 100%;
+    background-size: 60%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -42,14 +42,15 @@ header:hover {
 }
 
 header {
-    color: white;
+    background-color: #9d7e36;
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: url('/public/img/logo-putih-shadow.png');
+    background-image: url('/img/logo-black-shadow.png');
     background-repeat: no-repeat;
     background-position: left 10px center;
     background-size: 100px;
     width: 100%;
+    margin: 0; 
 }
 
 .header-container {
@@ -71,7 +72,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 0 20px;
     text-align: center;
     font-style: italic;
@@ -138,11 +139,13 @@ nav ul li:hover .submenu {
     text-decoration: none;
     font-size: 16px;
     font-family: 'Arial', 'Helvetica', sans-serif;
-    margin-left: 80%;
+    margin-left: 120%;
+    margin-top: -20px;
     display: block;
     width: fit-content;
     text-align: center;
     transition: background 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
 }
 
 .login-button:hover {
@@ -160,9 +163,6 @@ nav ul li:hover .submenu {
     transform: rotate(-180deg);
 }
 
-main {
-    flex-grow: 1;
-}
 
 footer {
     background: linear-gradient(#af8928 0%, #93721f 100%);
@@ -172,5 +172,5 @@ footer {
     font-family: Arial, sans-serif;
     font-size: 14px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: auto;
 }

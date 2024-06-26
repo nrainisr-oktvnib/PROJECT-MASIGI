@@ -1,3 +1,6 @@
+<?= $this->extend('auth/Beranda/layout3'); ?>
+<?= $this->section('content'); ?>
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -14,11 +17,6 @@
 </head>
 
 <body>
-    <?php
-    $page = 'beranda';
-    include 'header.php';
-    ?>
-
     <div class="header-content">
         <div class="video-container">
             <video id="myVideo" controls muted poster="/public/img/binalipu.jpg">
@@ -168,3 +166,6 @@
 </body>
 
 </html>
+
+<h1 class="h3 mb-4 text-gray-800">Selamat Datang, Admin!</h1>
+<?= $this->endSection(); ?>
