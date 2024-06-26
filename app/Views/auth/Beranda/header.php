@@ -6,7 +6,7 @@
                 <li>
                     <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="submenu">
-                        <li><a href="/app/Views/auth/Takmir/TakmirUmum.html">Takmir Masjid</a></li>
+                        <li><a href="/app/Views/auth/Takmir/takmirmasjid.html">Takmir Masjid</a></li>
                         <li><a href="/app/Views/auth/JPSJ/jadwal.html">Pelaksanaan Sholat Jum'at</a></li>
                         <li><a href="/app/Views/auth/LaporanKeuangan/uang.html">Laporan Keuangan</a></li>
                     </ul>

@@ -16,7 +16,7 @@ body {
      fadeIn 2s forwards;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     to {
         opacity: 1;
     }
@@ -143,7 +143,7 @@ nav ul li:hover .submenu {
     background: linear-gradient(135deg, #e2b952, #af8928);
     transform: scale(1.05);
     color: #fff;
-}
+} */
 
 
 .video-container {
