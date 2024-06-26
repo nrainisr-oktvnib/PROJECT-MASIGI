@@ -18,14 +18,17 @@ $routes->get('/', 'Jamaah::qurban');
 $routes->get('/', 'Jamaah::donasi');
 $routes->get('/', 'Jamaah::tutor');
 $routes->get('/', 'Jamaah::tentang');
+
 $routes->get('admin', 'Admin::index');
 $routes->get('admin/dashboard', 'Admin::dashboard');
 $routes->get('admin/registrasi', 'Admin::registrasi');
 $routes->get('admin/dataTakmir', 'Admin::dataTakmir');
-$routes->get('takmir/dashboard', 'takmir::dashboard');
-$routes->get('takmir/takmirMasjid', 'takmir::takmirMasjid');
-$routes->get('takmir/sholatJumat', 'takmir::sholatJumat');
-$routes->get('takmir/laporanKeuangan', 'takmir::laporanKeuangan');
-$routes->get('takmir/donasi', 'takmir::donasi');
-$routes->get('takmir/zakat', 'takmir::zakat');
-$routes->get('takmir/qurban', 'takmir::qurban');
+
+$routes->get('Takmir', 'Takmir::index');
+$routes->get('Takmir/dashboard', 'Takmir::dashboard');
+$routes->get('Takmir/takmirMasjid', 'Takmir::takmirMasjid');
+$routes->get('Takmir/sholatJumat', 'Takmir::sholatJumat');
+$routes->get('Takmir/laporanKeuangan', 'Takmir::laporanKeuangan');
+$routes->get('Takmir/donasi', 'Takmir::donasi');
+$routes->get('Takmir/zakat', 'Takmir::zakat');
+$routes->get('Takmir/qurban', 'Takmir::qurban');
