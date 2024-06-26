@@ -10,6 +10,15 @@ use App\Controllers\Jamaah;
  */
 $routes->get('/', 'Jamaah::index');
 $routes->get('/', 'Jamaah::beranda');
+$routes->get('/', 'Jamaah::takmirmasjid');
+$routes->get('/', 'Jamaah::jadwal');
+$routes->get('/', 'Jamaah::lapkeuangan');
+$routes->get('/', 'Jamaah::zakat');
+$routes->get('/', 'Jamaah::qurban');
+$routes->get('/', 'Jamaah::donasi');
+$routes->get('/', 'Jamaah::tutor');
+$routes->get('/', 'Jamaah::tentang');
+
 $routes->get('admin', 'Admin::index');
 $routes->get('admin/dashboard', 'Admin::dashboard');
 $routes->get('admin/registrasi', 'Admin::registrasi');

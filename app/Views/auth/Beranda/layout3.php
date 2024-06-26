@@ -18,13 +18,13 @@
                     <li>
                         <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
                         <ul class="submenu">
-                            <li><a href="<?= site_url('jamaah/TakmirUmum'); ?>">Takmir Masjid</a></li>
+                            <li><a href="<?= site_url('jamaah/takmirmasjid'); ?>">Takmir Masjid</a></li>
                             <li><a href="<?= site_url('jamaah/jadwal'); ?>">Pelaksanaan Sholat Jum'at</a></li>
-                            <li><a href="<?= site_url('jamaah/uang'); ?>">Laporan Keuangan</a></li>
+                            <li><a href="<?= site_url('jamaah/lapkeuangan'); ?>">Laporan Keuangan</a></li>
                         </ul>
                     </li>
                     <li><a href="<?= site_url('jamaah/zakat'); ?>">Zakat</a></li>
-                    <li><a href="<?= site_url('jamaah/sapi'); ?>">Qurban</a></li>
+                    <li><a href="<?= site_url('jamaah/qurban'); ?>">Qurban</a></li>
                     <li><a href="<?= site_url('jamaah/donasi'); ?>">Donasi</a></li>
                     <li><a href="<?= site_url('jamaah/tutor'); ?>">Cara Penggunaan</a></li>
                     <li><a href="<?= site_url('jamaah/tentang'); ?>">Kontak Kami</li>
