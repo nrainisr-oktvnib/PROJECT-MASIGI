@@ -14,13 +14,33 @@ class Takmir extends BaseController
         return view('/auth/Takmir/dashboard2');
     }
 
-    public function registrasi(): string
+    public function takmirMasjid(): string
     {
-        return view('/auth/Takmir/registrasi');
+        return view('/auth/Takmir/takmirMasjid');
     }
 
-    public function dataTakmir(): string
+    public function sholatJumat(): string
     {
-        return view('/auth/Takmir/dataTakmir');
+        return view('/auth/Takmir/sholatJumat');
+    }
+
+    public function laporanKeuangan(): string
+    {
+        return view('/auth/Takmir/laporanKeuangan');
+    }
+
+    public function donasi(): string
+    {
+        return view('/auth/Takmir/donasi');
+    }
+
+    public function zakat(): string
+    {
+        return view('/auth/Takmir/zakat');
+    }
+
+    public function qurban(): string
+    {
+        return view('/auth/Takmir/qurban');
     }
 }
