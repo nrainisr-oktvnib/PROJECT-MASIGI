@@ -9,7 +9,14 @@ use App\Controllers\Jamaah;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Jamaah::index');
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+$routes->get('/', 'Jamaah::beranda');
+=======
+>>>>>>> 9eb40b63034610efdca84f008dfb75c7fcac0dd8
+>>>>>>> f4203c474970d634e64ad414c1bd0703111730c8
 $routes->get('admin', 'Admin::index');
 $routes->get('admin/dashboard', 'Admin::dashboard');
 $routes->get('admin/registrasi', 'Admin::registrasi');

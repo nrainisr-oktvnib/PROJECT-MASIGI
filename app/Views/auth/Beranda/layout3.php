@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="layout3.css">
+    <link rel="stylesheet" type="text/css" href="/css/layout3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>HEADER DAN FOOTER</title>
+    <title>MASIGI (masjid digital)</title>
 </head>
 
 <body>
@@ -14,21 +14,20 @@
         <div class="header-container">
             <nav>
                 <ul>
-                    <li><a href="/app/Views/auth/Beranda/beranda.html" class="active">Beranda</a></li>
+                    <li><a href="<?= site_url('jamaah/beranda'); ?>" class="active">Beranda</a></li>
                     <li>
-                        <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i
-                                class="fa-solid fa-caret-down"></i></a>
+                        <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
                         <ul class="submenu">
-                            <li><a href="/app/Views/auth/Takmir/TakmirUmum.html">Takmir Masjid</a></li>
-                            <li><a href="/app/Views/auth/JPSJ/jadwal.html">Pelaksanaan Sholat Jum'at</a></li>
-                            <li><a href="/app/Views/auth/LaporanKeuangan/uang.html">Laporan Keuangan</a></li>
+                            <li><a href="<?= site_url('jamaah/TakmirUmum'); ?>">Takmir Masjid</a></li>
+                            <li><a href="<?= site_url('jamaah/jadwal'); ?>">Pelaksanaan Sholat Jum'at</a></li>
+                            <li><a href="<?= site_url('jamaah/uang'); ?>">Laporan Keuangan</a></li>
                         </ul>
                     </li>
-                    <li><a href="zakat.html">Zakat</a></li>
-                    <li><a href="sapi.html">Qurban</a></li>
-                    <li><a href="donasi.html">Donasi</a></li>
-                    <li><a href="tutor.html">Cara Penggunaan</a></li>
-                    <li><a href="tentang.html">Tentang Kami</a></li>
+                    <li><a href="<?= site_url('jamaah/zakat'); ?>">Zakat</a></li>
+                    <li><a href="<?= site_url('jamaah/sapi'); ?>">Qurban</a></li>
+                    <li><a href="<?= site_url('jamaah/donasi'); ?>">Donasi</a></li>
+                    <li><a href="<?= site_url('jamaah/tutor'); ?>">Cara Penggunaan</a></li>
+                    <li><a href="<?= site_url('jamaah/tentang'); ?>">Kontak Kami</li>
                     <li style="margin-left:auto;"><a href="loginn.html" class="login-button">Masuk</a></li>
                 </ul>
             </nav>
@@ -36,7 +35,7 @@
     </header>
 
     <main id="main-content">
-        <!-- Konten utama untuk setiap halaman akan ditempatkan di sini -->
+        <?= $this->renderSection('content'); ?>
     </main>
 
     <footer>
