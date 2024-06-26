@@ -1,11 +1,17 @@
+<?= $this->extend('auth/Admin/layout1'); ?>
+
+<?= $this->section('content'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="registrasi.css">
+    <link rel="stylesheet" type="text/css" href="lg.css">
     <title>REGISTRASI TAKMIR</title>
 </head>
+
 <body>
     <div class="container">
         <div class="row justify-content-center">
@@ -16,10 +22,10 @@
                             <div class="col-lg-12">
                                 <div class="p-3">
                                     <div class="text-center">
-                                        <img src="/public/img/logo-black-shadow.png" alt="Logo hitam" class="bg-login-image">
+                                        <img src="/img/logo-black-shadow.png" alt="Logo hitam" class="bg-login-image">
                                         <h1 class="h4 text-gray-900 mb-3">Registrasi Akun Takmir</h1>
                                     </div>
-                                    <form class="user" action ="registrasi.php" method="post">
+                                    <form class="user" action="registrasi.php" method="post">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user" id="inputFullName" name="nama_lengkap" placeholder="Nama Lengkap">
                                         </div>
@@ -30,17 +36,6 @@
                                             <div class="col-sm-6">
                                                 <select class="form-control form-control-user" name="jabatan" id="inputJabatan">
                                                     <option value="" disabled selected="pilih-jabatan">Pilih Jabatan</option>
-<<<<<<< HEAD
-                                                    <option value="option1"> Penasehat </option>
-                                                    <option value="option2">Ketua</option>
-                                                    <option value="option3">Sekretaris</option>
-                                                    <option value="option3">Bendahara</option>
-                                                    <option value="option3">Seksi Peribadatan</option>
-                                                    <option value="option3">Seksi Pendidikan dan Kerohanian</option>
-                                                    <option value="option3">Seksi Sarana dan Prasarana </option>
-                                                    <option value="option3">Seksi Humas dan Dana</option>
-                                                    <option value="option3">Seksi Kebersihan dan Keamanan</option>
-=======
                                                     <option value="option1">Penasehat</option>
                                                     <option value="option2">Ketua</option>
                                                     <option value="option3">Sekretaris</option>
@@ -51,7 +46,6 @@
                                                     <option value="option3">Seksi Humas Dan Dana </option>
                                                     <option value="option3">Seksi Kebersihan Dan Keamanan</option>
 
->>>>>>> 4acd4e2484463bd283e539e13dc05d430c6da878
                                                 </select>
                                             </div>
                                         </div>
@@ -93,6 +87,9 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>
+
+<?= $this->endSection(); ?>

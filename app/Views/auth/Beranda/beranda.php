@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>beranda.css">
+    <link rel="stylesheet" type="text/css" href="beranda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,29 +14,11 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <nav>
-                <ul>
-                    <li><a href="#" class="active" onclick="navigateTo('beranda.html')">Beranda</a></li>
-                    <li>
-                        <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="navigateTo('/app/Views/auth/Takmir/TakmirUmum.html')">Takmir Masjid</a></li>
-                            <li><a href="#" onclick="navigateTo('/app/Views/auth/JPSJ/jadwal.html')">Pelaksanaan Sholat Jum'at</a></li>
-                            <li><a href="#" onclick="navigateTo('/app/Views/auth/LaporanKeuangan/uang.html')">Laporan Keuangan</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" onclick="navigateTo('/app/Views/auth/Zakat/zakat.html')">Zakat</a></li>
-                    <li><a href="#" onclick="navigateTo('/app/Views/auth/Qurban/sapi.html')">Qurban</a></li>
-                    <li><a href="#" onclick="navigateTo('donasi.html')">Donasi</a></li>
-                    <li><a href="#" onclick="navigateTo('/app/Views/auth/Tutor/tutor.html')">Cara Penggunaan</a></li>
-                    <li><a href="#" onclick="navigateTo('/app/Views/auth/TentangKami/tentang.html')">Tentang Kami</a></li>
-                    <li style="margin-left:auto;"><a href="#" class="login-button" onclick="navigateTo('/app/Views/auth/login/loginn.html')">Masuk</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <?php
+    $page = 'beranda';
+    include 'header.php';
+    ?>
+
     <div class="header-content">
         <div class="video-container">
             <video id="myVideo" controls muted poster="/public/img/binalipu.jpg">
@@ -123,7 +105,7 @@
                     <p>@masigi_parepare</p>
                 </div>
                 <div class="contact-icons">
-                    <p><i class="ri-mail-fill"></i> masjiddigital@gmail.com</p>
+                    <p><i class="ri-mail-fill"></i> masjid_digital@gmail.com</p>
                     <p><i class="ri-phone-fill"></i> 082138445731</p>
                 </div>
             </div>
@@ -134,9 +116,7 @@
                 </iframe>
             </div>
         </div>
-        <footer>
-            <p>Hak Cipta &copy; 2024 Halaman MASIGI.</p>
-        </footer>
+        <?php include 'footer.php'; ?>
         <script>
             var images = ["/public/img/binalipu1.jpg", "/public/img/binalipu4.jpg", "/public/img/binalipu5.jpg", "/public/img/binalipu6.jpg"];
             var currentImageIndex = 0;
@@ -153,22 +133,6 @@
                 var mainImage = document.getElementById('main-image');
                 mainImage.src = images[currentImageIndex];
                 mainImage.alt = "Sumber gambar dari website";
-            }
-
-            document.addEventListener('DOMContentLoaded', function() {});
-
-
-
-            function toggleSubMenu(event, item) {
-                event.preventDefault();
-                var submenu = item.nextElementSibling;
-                var iconDown = item.querySelector('.fa-caret-down');
-                iconDown.classList.toggle('hide');
-                submenu.classList.toggle('show');
-            }
-
-            function navigateTo(page) {
-                window.location.href = page;
             }
 
             document.addEventListener('DOMContentLoaded', function() {
@@ -188,6 +152,18 @@
                     audio.currentTime = 0;
                 });
             });
+
+            function toggleSubMenu(event, item) {
+                event.preventDefault();
+                var submenu = item.nextElementSibling;
+                var iconDown = item.querySelector('.fa-caret-down');
+                iconDown.classList.toggle('hide');
+                submenu.classList.toggle('show');
+            }
+
+            function navigateTo(page) {
+                window.location.href = page;
+            }
         </script>
 </body>
 
