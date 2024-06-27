@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.judul {
+    background-color: #e2b952;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+section {
+    padding: 20px;
+}
+
+.tipe-kambing, .tipe-sapi {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tipe-kambing h2, .tipe-sapi h2 {
+    width: 100%;
+    text-align: center;
+    color: #e2b952;
+}
+
+.tipe-kambing > div, .tipe-sapi > div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tipe-kambing h3, .tipe-sapi h3 {
+    color: #e2b952;
+    text-align: center;
+}
+
+.tipe-kambing h4, .tipe-sapi h4 {
+    color: #555;
+    margin: 10px 0 5px 0;
+}
+
+.tipe-kambing span, .tipe-sapi span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.Spesifikasi, .Spek {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Spesifikasi li, .Spek li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.popup-class-btn, .pop {
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #e2b952;
+}
+
+.popup-class-btn:hover,
+.pop:hover {
+    background-color: #594104;
+}
+
+.pop, .btn, .popup-btn {
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.popup-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: fixed;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .3s;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.25);
+    opacity: 0;
+
+    transition: all .5s .1s;
+}
+
+.popup-content h2 {
+    color: #e2b952;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup-content label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.popup-content input[type="nama-peserta"],
+.popup-content input[type="tel"],
+.popup-content input[type="alamat"],
+.popup-content select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 9px;
+}
+
+.popup-content input[type="nama-peserta"]::placeholder,
+.popup-content input[type="tel"]::placeholder,
+.popup-content input[type="alamat"]::placeholder {
+    color: #999;
+}
+
+.popup-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup:target .popup-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-close:link,
+.popup-close:visited {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+}
+
+.popup-close:hover,
+.popup-close:active {
+    color: #555;
+}
