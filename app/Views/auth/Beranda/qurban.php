@@ -1,18 +1,23 @@
+<?= $this->extend('auth/Beranda/layout3'); ?>
+<?= $this->section('content'); ?>
+
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="sapi.css">
     <title>PROJEK AKHIR WEB</title>
 </head>
+
 <body>
     <div class="judul">
         <h1>MUDAHKAN IBADAH QURBAN ANDA DENGAN KAMI</h1>
     </div>
 
     <section class="tipe-kambing">
-    <h2 class="kambing">KAMBING</h2>
+        <h2 class="kambing">KAMBING</h2>
         <div class="KA">
             <h3>TIPE A</h3>
             <h4>Harga Kambing</h4>
@@ -62,8 +67,15 @@
         </div>
     </section>
 
+<<<<<<< HEAD:app/Views/auth/Qurban/sapi.html
     <section class="tipe-sapi">
     <h2 class="sapi">SAPI</h2>
+=======
+
+
+    <section class="sec">
+        <h2 class="sapi">SAPI</h2>
+>>>>>>> 2050c53632e13b896600ec31694cca8d2bc67c18:app/Views/auth/Beranda/qurban.php
         <div class="SA">
             <h3>TIPE A</h3>
             <h4>Harga Sapi</h4>
@@ -119,7 +131,16 @@
         </div>
     </section>
 
+<<<<<<< HEAD:app/Views/auth/Qurban/sapi.html
     <section class="popup-container" id="popup">
+=======
+    <div class="judul-pendaftaran">
+        <h2>PENDAFTARAN QURBAN:</h2>
+    </div>
+
+    <section class="popup-container" id="popup">
+        <!-- <div class="popup" id="popup"> -->
+>>>>>>> 2050c53632e13b896600ec31694cca8d2bc67c18:app/Views/auth/Beranda/qurban.php
         <div class="popup-content">
             <div class="judul-pendaftaran">
                 <a href="#" class="popup-close">&times;</a>
@@ -127,12 +148,16 @@
             </div>
 
             <div class="nama-peserta">
-                <label for="nama-peserta"><h4>Nama Peserta:</h4></label>
+                <label for="nama-peserta">
+                    <h4>Nama Peserta:</h4>
+                </label>
                 <input type="nama-peserta" id="nama-peserta" placeholder="Masukkan Nama">
             </div>
 
             <div class="jenis-qurban">
-                <label for="jenis-qurban"><h4>Jenis Qurban:</h4></label>
+                <label for="jenis-qurban">
+                    <h4>Jenis Qurban:</h4>
+                </label>
                 <select name="jenis" id="jenis-qurban">
                     <option value="" disabled selected>Pilih Jenis Qurban</option>
                     <option value="perorang">Perorang</option>
@@ -140,19 +165,30 @@
                 </select>
 
                 <div class="Alamat">
-                    <label for="Alamat"><h4>Alamat:</h4></label>
+                    <label for="Alamat">
+                        <h4>Alamat:</h4>
+                    </label>
                     <input type="Alamat" nama="alamat" id="alamat" placeholder="Masukkan Alamat">
                 </div>
 
                 <div class="NoTlp">
-                    <label for="Tlp"><h4>No Telepon:</h4></label>
+                    <label for="Tlp">
+                        <h4>No Telepon:</h4>
+                    </label>
                     <input type="tel" nama="tlp" id="tlp" placeholder="Masukkan Nomor Telepon">
                 </div>
             </div>
+<<<<<<< HEAD:app/Views/auth/Qurban/sapi.html
             <div class="popup-class-btn">
                 <a href="#" class="popup-btn">Bayar</a>
             </div>
         </div>
+=======
+            <a href="#" class="popup-btn">Pesan</a>
+            <!-- </div> -->
+>>>>>>> 2050c53632e13b896600ec31694cca8d2bc67c18:app/Views/auth/Beranda/qurban.php
     </section>
 </body>
+
 </html>
+<?= $this->endSection(); ?>
