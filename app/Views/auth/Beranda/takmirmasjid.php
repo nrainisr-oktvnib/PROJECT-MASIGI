@@ -1,12 +1,17 @@
- <!DOCTYPE html>
+<?= $this->extend('auth/Beranda/layout3'); ?>
+<?= $this->section('content'); ?>
+
+<!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="TakmirUmum.css">
+    <link rel="stylesheet" type="text/css" href="takmirmasjid.css">
     <link rel="stylesheet" type="text/css" href="layout3.css">
     <title>PROJEK AKHIR WEB</title>
 </head>
+
 <body>
     <img src="struktur.png">
     <!-- <div class="struktur">
@@ -27,6 +32,7 @@
             </ul>
     	</ul>
     </div> -->
-    <script src="/app/Views/auth/Beranda/layout3.JS"></script>
 </body>
+
 </html>
+<?= $this->endSection(); ?>

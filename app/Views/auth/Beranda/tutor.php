@@ -1,11 +1,17 @@
+<?= $this->extend('auth/Beranda/layout3'); ?>
+<?= $this->section('content');
+  ?>
+
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cara Penggunaan</title>
     <link rel="stylesheet" href="tutor.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Cara Penggunaan</h1>
@@ -24,4 +30,6 @@
         <a href="/app/Views/auth/Beranda/beranda.html">Kembali ke Halaman Utama</a>
     </div>
 </body>
+
 </html>
+<?= $this->endSection(); ?>

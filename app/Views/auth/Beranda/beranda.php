@@ -1,49 +1,29 @@
+<?= $this->extend('auth/Beranda/layout3'); ?>
+<?= $this->section('content'); ?>
+
 <!DOCTYPE html>
 <html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= base_url(); ?>/css/beranda.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="<?= base_url(); ?>https://fonts.googleapis.com">
-    <link rel="preconnect" href="<?= base_url(); ?>https://fonts.gstatic.com" crossorigin>
-    <link href="<?= base_url(); ?>https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?= base_url(); ?>https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" type="text/css" href="/css/beranda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <title>MASIGI: Beranda</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <nav>
-                <ul>
-                    <li><a href="#" class="active" onclick="navigateTo('beranda.html')">Beranda</a></li>
-                    <li>
-                        <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="navigateTo('/app/Views/auth/Takmir/TakmirUmum.html')">Takmir Masjid</a></li>
-                            <li><a href="#" onclick="navigateTo('/app/Views/auth/JPSJ/jadwal.html')">Pelaksanaan Sholat Jum'at</a></li>
-                            <li><a href="#" onclick="navigateTo('/app/Views/auth/LaporanKeuangan/uang.html')">Laporan Keuangan</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" onclick="navigateTo('/app/Views/auth/Zakat/zakat.html')">Zakat</a></li>
-                    <li><a href="#" onclick="navigateTo('/app/Views/auth/Qurban/sapi.html')">Qurban</a></li>
-                    <li><a href="#" onclick="navigateTo('donasi.html')">Donasi</a></li>
-                    <li><a href="#" onclick="navigateTo('/app/Views/auth/Tutor/tutor.html')">Cara Penggunaan</a></li>
-                    <li><a href="#" onclick="navigateTo('/app/Views/auth/TentangKami/tentang.html')">Tentang Kami</a></li>
-                    <li style="margin-left:auto;"><a href="#" class="login-button" onclick="navigateTo('/app/Views/auth/login/loginn.html')">Masuk</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <div class="header-content">
         <div class="video-container">
             <video id="myVideo" controls muted poster="/img/binalipu.jpg">
                 <source src="/vid/MASIGI.mp4" type="video/mp4">
             </video>
             <audio id="myAudio">
-                <source src="/audio/MASIGI.mp3" type="audio/mpeg">
+                <source src="audio/MASIGI.mp3" type="audio/mpeg">
             </audio>
             <p>*ARAHKAN KURSOR KE GAMBAR LALU KLIK DAN SPASI UNTUK MEMAINKAN VIDEO*</p>
         </div>
@@ -123,7 +103,7 @@
                     <p>@masigi_parepare</p>
                 </div>
                 <div class="contact-icons">
-                    <p><i class="ri-mail-fill"></i> masjiddigital@gmail.com</p>
+                    <p><i class="ri-mail-fill"></i> masjid_digital@gmail.com</p>
                     <p><i class="ri-phone-fill"></i> 082138445731</p>
                 </div>
             </div>
@@ -134,11 +114,8 @@
                 </iframe>
             </div>
         </div>
-        <footer>
-            <p>Hak Cipta &copy; 2024 Halaman MASIGI.</p>
-        </footer>
         <script>
-            var images = ["/img/binalipu1.jpg", "/img/binalipu4.jpg", "/img/binalipu5.jpg", "/img/binalipu6.jpg"];
+            var images = ["img/binalipu1.jpg", "/img/binalipu4.jpg", "/img/binalipu5.jpg", "/img/binalipu6.jpg"];
             var currentImageIndex = 0;
 
             function nextImage() {
@@ -153,22 +130,6 @@
                 var mainImage = document.getElementById('main-image');
                 mainImage.src = images[currentImageIndex];
                 mainImage.alt = "Sumber gambar dari website";
-            }
-
-            document.addEventListener('DOMContentLoaded', function() {});
-
-
-
-            function toggleSubMenu(event, item) {
-                event.preventDefault();
-                var submenu = item.nextElementSibling;
-                var iconDown = item.querySelector('.fa-caret-down');
-                iconDown.classList.toggle('hide');
-                submenu.classList.toggle('show');
-            }
-
-            function navigateTo(page) {
-                window.location.href = page;
             }
 
             document.addEventListener('DOMContentLoaded', function() {
@@ -188,7 +149,20 @@
                     audio.currentTime = 0;
                 });
             });
+
+            function toggleSubMenu(event, item) {
+                event.preventDefault();
+                var submenu = item.nextElementSibling;
+                var iconDown = item.querySelector('.fa-caret-down');
+                iconDown.classList.toggle('hide');
+                submenu.classList.toggle('show');
+            }
+
+            function navigateTo(page) {
+                window.location.href = page;
+            }
         </script>
 </body>
 
 </html>
+<?= $this->endSection(); ?>
