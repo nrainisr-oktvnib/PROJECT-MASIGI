@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <div class="judul">
         <h1>MUDAHKAN IBADAH QURBAN ANDA DENGAN KAMI</h1>
     </div>
@@ -27,10 +26,12 @@
             <span>25-35kg</span>
             <div class="Spesifikasi">
                 <h4>Spesifikasi Hewan Qurban</h4>
-                <li>Penyembelihan dijadwalkan oleh pengurus masjid</li>
-                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam</li>
+                <li>Penyembelihan dijadwalkan oleh pengurus masjid.</li>
+                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam.</li>
             </div>
-            <a href="#popup" class="btn">Pesan</a>
+            <div class="pop">
+                <a href="#popup" class="btn">Pesan</a>
+            </div>
         </div>
 
         <div class="KB">
@@ -41,10 +42,12 @@
             <span>20-30kg</span>
             <div class="Spesifikasi">
                 <h4>Spesifikasi Hewan Qurban</h4>
-                <li>Penyembelihan dijadwalkan oleh pengurus masjid</li>
-                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam</li>
+                <li>Penyembelihan dijadwalkan oleh pengurus masjid.</li>
+                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam.</li>
             </div>
-            <a href="#popup" class="btn">Pesan</a>
+            <div class="pop">
+                <a href="#popup" class="btn">Pesan</a>
+            </div>
         </div>
 
         <div class="KC">
@@ -55,17 +58,24 @@
             <span>15-25kg</span>
             <div class="Spesifikasi">
                 <h4>Spesifikasi Hewan Qurban</h4>
-                <li>Penyembelihan dijadwalkan oleh pengurus masjid</li>
-                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam</li>
+                <li>Penyembelihan dijadwalkan oleh pengurus masjid.</li>
+                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam.</li>
             </div>
-            <a href="#popup" class="btn">Pesan</a>
+            <div class="pop">
+                <a href="#popup" class="btn">Pesan</a>
+            </div>
         </div>
     </section>
 
+<<<<<<< HEAD:app/Views/auth/Qurban/sapi.html
+    <section class="tipe-sapi">
+    <h2 class="sapi">SAPI</h2>
+=======
 
 
     <section class="sec">
         <h2 class="sapi">SAPI</h2>
+>>>>>>> 2050c53632e13b896600ec31694cca8d2bc67c18:app/Views/auth/Beranda/qurban.php
         <div class="SA">
             <h3>TIPE A</h3>
             <h4>Harga Sapi</h4>
@@ -74,10 +84,13 @@
             <span>265-270kg</span>
             <div class="Spek">
                 <h4>Spesifikasi Hewan Qurban</h4>
-                <li>Harga Rp4.000.000 perorang</li>
-                <li>Bobot sapi perorang yaitu 38kg</li>
-                <li>Penyembelihan dijadwalkan oleh pengurus masjid</li>
-                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam</li>
+                <li>Harga Rp4.000.000 perorang.</li>
+                <li>Bobot sapi perorang yaitu 38kg.</li>
+                <li>Penyembelihan dijadwalkan oleh pengurus masjid.</li>
+                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam.</li>
+            </div>
+            <div class="pop">
+                <a href="#popup" class="btn">Pesan</a>
             </div>
         </div>
 
@@ -89,10 +102,13 @@
             <span>220-230kg</span>
             <div class="Spek">
                 <h4>Spesifikasi Hewan Qurban</h4>
-                <li>Harga Rp3.500.000 perorang</li>
-                <li>Bobot sapi perorang yaitu 32kg</li>
-                <li>Penyembelihan dijadwalkan oleh pengurus masjid</li>
-                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam</li>
+                <li>Harga Rp3.500.000 perorang.</li>
+                <li>Bobot sapi perorang yaitu 32kg.</li>
+                <li>Penyembelihan dijadwalkan oleh pengurus masjid.</li>
+                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam.</li>
+            </div>
+            <div class="pop">
+                <a href="#popup" class="btn">Pesan</a>
             </div>
         </div>
 
@@ -104,21 +120,33 @@
             <span>180-190kg</span>
             <div class="Spek">
                 <h4>Spesifikasi Hewan Qurban</h4>
-                <li>Harga Rp2.900.000 perorang</li>
-                <li>Bobot sapi perorang yaitu 26kg</li>
-                <li>Penyembelihan dijadwalkan oleh pengurus masjid</li>
-                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam</li>
+                <li>Harga Rp2.900.000 perorang.</li>
+                <li>Bobot sapi perorang yaitu 26kg.</li>
+                <li>Penyembelihan dijadwalkan oleh pengurus masjid.</li>
+                <li>Hewan qurban yang dibeli merupakan hewan yang layak untuk diqurbankan sesuai syariat islam.</li>
+            </div>
+            <div class="pop">
+                <a href="#popup" class="btn">Pesan</a>
             </div>
         </div>
     </section>
 
+<<<<<<< HEAD:app/Views/auth/Qurban/sapi.html
+    <section class="popup-container" id="popup">
+=======
     <div class="judul-pendaftaran">
         <h2>PENDAFTARAN QURBAN:</h2>
     </div>
 
     <section class="popup-container" id="popup">
         <!-- <div class="popup" id="popup"> -->
+>>>>>>> 2050c53632e13b896600ec31694cca8d2bc67c18:app/Views/auth/Beranda/qurban.php
         <div class="popup-content">
+            <div class="judul-pendaftaran">
+                <a href="#" class="popup-close">&times;</a>
+                <h2>PENDAFTARAN QURBAN:</h2>
+            </div>
+
             <div class="nama-peserta">
                 <label for="nama-peserta">
                     <h4>Nama Peserta:</h4>
@@ -150,10 +178,16 @@
                     <input type="tel" nama="tlp" id="tlp" placeholder="Masukkan Nomor Telepon">
                 </div>
             </div>
+<<<<<<< HEAD:app/Views/auth/Qurban/sapi.html
+            <div class="popup-class-btn">
+                <a href="#" class="popup-btn">Bayar</a>
+            </div>
+        </div>
+=======
             <a href="#" class="popup-btn">Pesan</a>
             <!-- </div> -->
+>>>>>>> 2050c53632e13b896600ec31694cca8d2bc67c18:app/Views/auth/Beranda/qurban.php
     </section>
-    <!-- </div> -->
 </body>
 
 </html>
