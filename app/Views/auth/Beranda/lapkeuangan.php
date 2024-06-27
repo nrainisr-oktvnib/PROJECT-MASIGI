@@ -1,11 +1,16 @@
+<?= $this->extend('auth/Beranda/layout3'); ?>
+<?= $this->section('content'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laporan Keuangan Masjid</title>
     <link rel="stylesheet" href="uang.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Laporan Keuangan Masjid</h1>
@@ -94,4 +99,6 @@
         </table>
     </div>
 </body>
+
 </html>
+<?= $this->endSection(); ?>

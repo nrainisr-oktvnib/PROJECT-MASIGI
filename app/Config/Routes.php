@@ -8,12 +8,11 @@ use App\Controllers\Jamaah;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Jamaah::index');
 $routes->get('/', 'Jamaah::beranda');
 $routes->get('/', 'Jamaah::takmirmasjid');
 $routes->get('/', 'Jamaah::jadwal');
 $routes->get('/', 'Jamaah::lapkeuangan');
-$routes->get('/', 'Jamaah::zakat');
+$routes->get('/', 'Jamaah::zakat2');
 $routes->get('/', 'Jamaah::qurban');
 $routes->get('/', 'Jamaah::donasi');
 $routes->get('/', 'Jamaah::tutor');
