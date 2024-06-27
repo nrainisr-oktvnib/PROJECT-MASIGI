@@ -14,20 +14,20 @@
         <div class="header-container">
             <nav>
                 <ul>
-                    <li><a href="<?= site_url('jamaah/beranda'); ?>" class="active">Beranda</a></li>
+                    <li><a href="<?= site_url('Jamaah/beranda'); ?>" class="active">Beranda</a></li>
                     <li>
                         <a href="#" onclick="toggleSubMenu(event, this)">Informasi <i class="fa-solid fa-caret-down"></i></a>
                         <ul class="submenu">
-                            <li><a href="<?= site_url('jamaah/TakmirUmum'); ?>">Takmir Masjid</a></li>
-                            <li><a href="<?= site_url('jamaah/jadwal'); ?>">Pelaksanaan Sholat Jum'at</a></li>
-                            <li><a href="<?= site_url('jamaah/uang'); ?>">Laporan Keuangan</a></li>
+                            <li><a href="<?= site_url('Jamaah/takmirmasjid'); ?>">Takmir Masjid</a></li>
+                            <li><a href="<?= site_url('Jamaah/jadwal'); ?>">Pelaksanaan Sholat Jum'at</a></li>
+                            <li><a href="<?= site_url('Jamaah/lapkeuangan'); ?>">Laporan Keuangan</a></li>
                         </ul>
                     </li>
-                    <li><a href="<?= site_url('jamaah/zakat'); ?>">Zakat</a></li>
-                    <li><a href="<?= site_url('jamaah/sapi'); ?>">Qurban</a></li>
-                    <li><a href="<?= site_url('jamaah/donasi'); ?>">Donasi</a></li>
-                    <li><a href="<?= site_url('jamaah/tutor'); ?>">Cara Penggunaan</a></li>
-                    <li><a href="<?= site_url('jamaah/tentang'); ?>">Kontak Kami</li>
+                    <li><a href="<?= site_url('Jamaah/zakat2'); ?>">Zakat</a></li>
+                    <li><a href="<?= site_url('Jamaah/qurban'); ?>">Qurban</a></li>
+                    <li><a href="<?= site_url('Jamaah/donasi'); ?>">Donasi</a></li>
+                    <li><a href="<?= site_url('Jamaah/tutor'); ?>">Cara Penggunaan</a></li>
+                    <li><a href="<?= site_url('Jamaah/tentang'); ?>">Kontak Kami</li>
                     <li style="margin-left:auto;"><a href="loginn.html" class="login-button">Masuk</a></li>
                 </ul>
             </nav>

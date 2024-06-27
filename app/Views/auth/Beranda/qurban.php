@@ -1,11 +1,16 @@
+<?= $this->extend('auth/Beranda/layout3'); ?>
+<?= $this->section('content'); ?>
+
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="sapi.css">
     <title>PROJEK AKHIR WEB</title>
 </head>
+
 <body>
 
     <div class="judul">
@@ -13,7 +18,7 @@
     </div>
 
     <section class="tipe-kambing">
-    <h2 class="kambing">KAMBING</h2>
+        <h2 class="kambing">KAMBING</h2>
         <div class="KA">
             <h3>TIPE A</h3>
             <h4>Harga Kambing</h4>
@@ -60,7 +65,7 @@
 
 
     <section class="sec">
-    <h2 class="sapi">SAPI</h2>
+        <h2 class="sapi">SAPI</h2>
         <div class="SA">
             <h3>TIPE A</h3>
             <h4>Harga Sapi</h4>
@@ -111,16 +116,20 @@
         <h2>PENDAFTARAN QURBAN:</h2>
     </div>
 
-        <section class="popup-container" id="popup">
-    <!-- <div class="popup" id="popup"> -->
+    <section class="popup-container" id="popup">
+        <!-- <div class="popup" id="popup"> -->
         <div class="popup-content">
             <div class="nama-peserta">
-                <label for="nama-peserta"><h4>Nama Peserta:</h4></label>
+                <label for="nama-peserta">
+                    <h4>Nama Peserta:</h4>
+                </label>
                 <input type="nama-peserta" id="nama-peserta" placeholder="Masukkan Nama">
             </div>
 
             <div class="jenis-qurban">
-                <label for="jenis-qurban"><h4>Jenis Qurban:</h4></label>
+                <label for="jenis-qurban">
+                    <h4>Jenis Qurban:</h4>
+                </label>
                 <select name="jenis" id="jenis-qurban">
                     <option value="" disabled selected>Pilih Jenis Qurban</option>
                     <option value="perorang">Perorang</option>
@@ -128,18 +137,24 @@
                 </select>
 
                 <div class="Alamat">
-                    <label for="Alamat"><h4>Alamat:</h4></label>
+                    <label for="Alamat">
+                        <h4>Alamat:</h4>
+                    </label>
                     <input type="Alamat" nama="alamat" id="alamat" placeholder="Masukkan Alamat">
                 </div>
 
                 <div class="NoTlp">
-                    <label for="Tlp"><h4>No Telepon:</h4></label>
+                    <label for="Tlp">
+                        <h4>No Telepon:</h4>
+                    </label>
                     <input type="tel" nama="tlp" id="tlp" placeholder="Masukkan Nomor Telepon">
                 </div>
             </div>
             <a href="#" class="popup-btn">Pesan</a>
-        <!-- </div> -->
+            <!-- </div> -->
     </section>
     <!-- </div> -->
 </body>
+
 </html>
+<?= $this->endSection(); ?>
