@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="beranda.css">
+    <link rel="stylesheet" type="text/css" href="/css/beranda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,11 @@
 <body>
     <div class="header-content">
         <div class="video-container">
-            <video id="myVideo" controls muted poster="/public/img/binalipu.jpg">
-                <source src="/public/vid/MASIGI.mp4" type="video/mp4">
+            <video id="myVideo" controls muted poster="/img/binalipu.jpg">
+                <source src="/vid/MASIGI.mp4" type="video/mp4">
             </video>
             <audio id="myAudio">
-                <source src="/public/audio/MASIGI.mp3" type="audio/mpeg">
+                <source src="audio/MASIGI.mp3" type="audio/mpeg">
             </audio>
             <p>*ARAHKAN KURSOR KE GAMBAR LALU KLIK DAN SPASI UNTUK MEMAINKAN VIDEO*</p>
         </div>
@@ -82,7 +82,7 @@
         <h4>Beberapa gambar masjid Binalipu Kota Parepare</h4>
         <div id="image-and-quote-container">
             <div id="image-container">
-                <img id="main-image" src="/public/img/binalipu1.jpg">
+                <img id="main-image" src="/img/binalipu1.jpg">
                 <div id="image-navigation">
                     <i class="fas fa-chevron-left" onclick="previousImage()"></i>
                     <i class="fas fa-chevron-right" onclick="nextImage()"></i>
@@ -95,7 +95,7 @@
         <div class="contact-map-container">
             <div class="contact-text">
                 <p>KONTAK KAMI</p>
-                <img src="/public/img/logo-black-shadow.png" alt="Logo footer" class="footer-logo">
+                <img src="/img/logo-black-shadow.png" alt="Logo footer" class="footer-logo">
                 <div class="social-icons">
                     <i class="ri-instagram-fill"></i>
                     <i class="ri-facebook-circle-fill"></i>
@@ -114,9 +114,8 @@
                 </iframe>
             </div>
         </div>
-        <?php include 'footer.php'; ?>
         <script>
-            var images = ["/public/img/binalipu1.jpg", "/public/img/binalipu4.jpg", "/public/img/binalipu5.jpg", "/public/img/binalipu6.jpg"];
+            var images = ["img/binalipu1.jpg", "/img/binalipu4.jpg", "/img/binalipu5.jpg", "/img/binalipu6.jpg"];
             var currentImageIndex = 0;
 
             function nextImage() {
@@ -166,6 +165,4 @@
 </body>
 
 </html>
-
-<h1 class="h3 mb-4 text-gray-800">Selamat Datang, Admin!</h1>
 <?= $this->endSection(); ?>
