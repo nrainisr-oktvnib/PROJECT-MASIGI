@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <img src="struktur.png">
+    <img src="/img/struktur-takmir.png" alt="">
     <!-- <div class="struktur">
     	<ul>
     		<li>Penasehat</li>
