@@ -35,7 +35,10 @@
     </header>
 
     <main id="main-content">
-        <?= $this->renderSection('content'); ?>
+        <div>
+            <?= $this->renderSection('content'); ?>
+        </div>
+
     </main>
 
     <footer>
