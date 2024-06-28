@@ -1,148 +1,145 @@
-<?= $this->extend('auth/Takmir/layout2'); ?>
-
-<?= $this->section('content'); ?>
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jadwal Pelaksanaan Sholat Jumat</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="sholatJumat.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sholatJumat.css">
+    <title>PROJEK AKHIR WEB</title>
 </head>
 
 <body>
-  <div class="container mt-5">
-    <h1 class="text-center mb-4">JADWAL PETUGAS PELAKSANAAN SHOLAT JUM'AT</h1>
-    <div class="d-flex justify-content-end mb-2">
-      <button class="btn btn-primary" data-toggle="modal" data-target="#addModal">Tambah Jadwal</button>
-    </div>
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
-        <thead class="thead-dark">
-          <tr>
-            <th>HARI/TANGGAL</th>
-            <th>IMAM</th>
-            <th>KHOTIB</th>
-            <th>MUADZIN</th>
-            <th>Aksi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Add your data rows here -->
-          <tr>
-            <td>20 April 2024</td>
-            <td>Sheikh Ibrahim Al-Mansur</td>
-            <td>Sainuddin</td>
-            <td>Kareem Malik</td>
-            <td>
-              <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editModal">Edit</button>
-              <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">Hapus</button>
-            </td>
-          </tr>
-          <!-- Repeat for other rows -->
-        </tbody>
-      </table>
-    </div>
-  </div>
+    <section class="jadwal-petugas">
+        <div class="jadwal">
+            <h2>Jadwal Petugas Sholat Jumat</h2>
+        </div>
 
-  <!-- Add Modal -->
-  <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="addModalLabel">Tambah Jadwal</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <div class="tambah-jadwal">
+            <a href="#popup" class="add-button">Tambah Jadwal</a>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="tanggal">HARI/TANGGAL</label>
-              <input type="date" class="form-control" id="tanggal">
-            </div>
-            <div class="form-group">
-              <label for="imam">IMAM</label>
-              <input type="text" class="form-control" id="imam">
-            </div>
-            <div class="form-group">
-              <label for="khotib">KHOTIB</label>
-              <input type="text" class="form-control" id="khotib">
-            </div>
-            <div class="form-group">
-              <label for="muadzin">MUADZIN</label>
-              <input type="text" class="form-control" id="muadzin">
-            </div>
-            <button type="submit" class="btn btn-primary">Simpan</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Edit Modal -->
-  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="editModalLabel">Edit Jadwal</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <div class="tabel">
+            <table>
+                <thead>
+                    <tr>
+                        <th>HARI/TANGGAL</th>
+                        <th>IMAM</th>
+                        <th>KHOTIB</th>
+                        <th>MUADZIN</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20 April 2024</td>
+                        <td>Sheikh Ibrahim Al-Mansur</td>
+                        <td>Sainuddin</td>
+                        <td>Kareem Malik</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>10 Mei 2024</td>
+                        <td>Ahmad Abdullah</td>
+                        <td>Muhammad Ali</td>
+                        <td>Bilal Rahman</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>13 Mei 2024</td>
+                        <td>Abdullah Rahman</td>
+                        <td>Iyas Siddiqh</td>
+                        <td>Hamzah Farid</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>27 Juni 2024</td>
+                        <td>Al-Fahrizi</td>
+                        <td>Khaliq</td>
+                        <td>Yusuf Akbar</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>3 November 2024</td>
+                        <td>Amir Al-Qadri</td>
+                        <td>Sayifah Aziz</td>
+                        <td>Idri Syaifullah</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>6 Oktober 2024</td>
+                        <td>Kamal Al-Hasimi</td>
+                        <td>Zainab Ahmad</td>
+                        <td>Syarifai</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>1 Desember 2024</td>
+                        <td>Amirullah</td>
+                        <td>Muhammad Rifki</td>
+                        <td>Muhammad Taufik</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="edit-tanggal">HARI/TANGGAL</label>
-              <input type="date" class="form-control" id="edit-tanggal">
-            </div>
-            <div class="form-group">
-              <label for="edit-imam">IMAM</label>
-              <input type="text" class="form-control" id="edit-imam">
-            </div>
-            <div class="form-group">
-              <label for="edit-khotib">KHOTIB</label>
-              <input type="text" class="form-control" id="edit-khotib">
-            </div>
-            <div class="form-group">
-              <label for="edit-muadzin">MUADZIN</label>
-              <input type="text" class="form-control" id="edit-muadzin">
-            </div>
-            <button type="submit" class="btn btn-primary">Simpan</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Delete Modal -->
-  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="deleteModalLabel">Hapus Jadwal</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Apakah Anda yakin ingin menghapus jadwal ini?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-          <button type="button" class="btn btn-danger">Hapus</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <section class="pop" id="popup">
+        <div class="popup-jadwal">
+            <div class="popup-content">
+                <a href="#" class="popup-close">&times;</a>
+                <h3>Tambah Jadwal Sholat Jumat</h3>
+                <form id="jadwalForm">
+                    <label for="tanggal">Hari/Tanggal:</label>
+                    <input type="date" id="tanggal" name="tanggal"><br><br>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+                    <label for="imam">Imam:</label>
+                    <input type="text" id="imam" name="imam"><br><br>
+
+                    <label for="khotib">Khotib:</label>
+                    <input type="text" id="khotib" name="khotib"><br><br>
+
+                    <label for="muadzin">Muadzin:</label>
+                    <input type="text" id="muadzin" name="muadzin"><br><br>
+
+                    <div class="popup-class-btn">
+                        <a href="#" class="popup-btn">Simpan</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
-
 </html>
-
-<?= $this->endSection(); ?>
