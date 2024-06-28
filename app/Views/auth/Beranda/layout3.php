@@ -42,6 +42,7 @@
         <p>Hak Cipta &copy; 2024 Halaman MASIGI.</p>
     </footer>
 
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var navLinks = document.querySelectorAll('.nav-link');
