@@ -8,7 +8,8 @@ use App\Controllers\Jamaah;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Jamaah::beranda');
+
+$routes->get('/', 'Jamaah::index');
 $routes->get('Jamaah/beranda', 'Jamaah::beranda');
 $routes->get('Jamaah/takmirmasjid', 'Jamaah::takmirmasjid');
 $routes->get('Jamaah/jadwal', 'Jamaah::jadwal');
