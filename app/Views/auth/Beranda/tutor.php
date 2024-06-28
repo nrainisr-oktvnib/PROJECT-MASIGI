@@ -1,6 +1,5 @@
 <?= $this->extend('auth/Beranda/layout3'); ?>
-<?= $this->section('content');
-  ?>
+<?= $this->section('content'); ?>
 
 <!DOCTYPE html>
 <html lang="id">
@@ -9,12 +8,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cara Penggunaan</title>
-    <link rel="stylesheet" href="tutor.css">
+    <link rel="stylesheet" href="/css/tutor.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Cara Penggunaan</h1>
+        <h1>CARA PENGGUNAAN</h1>
         <p>Selamat datang di halaman panduan penggunaan website kami. Berikut ini adalah panduan lengkap untuk memanfaatkan semua fitur yang tersedia:</p>
         <ol>
             <li>Pada halaman <strong>Beranda</strong>, Anda bisa melihat penjelasan singkat mengenai website ini, jadwal sholat, beberapa gambar masjid, kutipan inspiratif, lokasi, dan kontak kami.</li>
@@ -27,7 +26,6 @@
             <li>Untuk mengetahui lebih banyak tentang kami, klik menu <strong>Tentang Kami</strong> yang ada di header halaman.</li>
             <li>Jika Anda memiliki pertanyaan lebih lanjut, hubungi admin melalui halaman <strong>Kontak</strong>.</li>
         </ol>
-        <a href="/app/Views/auth/Beranda/beranda.html">Kembali ke Halaman Utama</a>
     </div>
 </body>
 

@@ -42,8 +42,13 @@
             </div>
             <!-- Nav Item - Registrasi Takmir -->
             <li class="nav-item">
+<<<<<<< HEAD:app/Views/auth/Admin/layout1.html
+                <a class="nav-link" href="/app/Views/auth/login/registrasi.html">
+                    <i class="fa-solid fa-user-plus"></i>                    
+=======
                 <a class="nav-link" href="<?= site_url('admin/registrasi'); ?>" id="registrasi-link">
                     <i class="fa-solid fa-user-plus"></i>
+>>>>>>> 4acd4e2484463bd283e539e13dc05d430c6da878:app/Views/auth/Admin/layout1.php
                     <span>Registrasi Takmir</span></a>
             </li>
             <!-- Nav Item - Data Takmir -->

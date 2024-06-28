@@ -1,18 +1,19 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #f5af19, #6f5300);
-    color: #333;
+    background-color: #be8f19;
+    color: #000000;
     margin: 0;
-    padding: 20px;
+    padding: -20px;
 }
 
 .container {
     max-width: 1200px;
     margin: auto;
     background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-height: 2400px;
 }
 
 h1 {
