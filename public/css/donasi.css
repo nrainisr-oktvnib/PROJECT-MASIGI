@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
@@ -13,16 +13,13 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 50px;
-    padding-left: 45px;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 80px;
+    padding: 30px;
+    width: 30%;
+    margin: 10rem auto;
 }
 
 .judul {
     text-align: center;
-    margin-top: -1px;
 }
 
 .container h4 {
@@ -35,8 +32,8 @@ body {
     margin-bottom: 5px;
 }
 
-.container input, .container select {
-    width: 100%;
+.container input {
+    width: 95%;
     padding: 10px;
     margin-bottom: 15px;
     border: none;
@@ -52,11 +49,9 @@ body {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
     margin-top: 10px;
-    margin-left: 40%;
-    text-align: center;
     border-radius: 50px;
+    margin-left: 150px;
     background-color: #e2b952;
 }
 
