@@ -159,5 +159,7 @@ nav ul li:hover .submenu {
 footer {
     background: linear-gradient(#af8928 0%, #93721f 100%);
     text-align: center;
-    width: 90%;
+    width: 100%;
+    color:#fff;
+    padding: 10px;
 }

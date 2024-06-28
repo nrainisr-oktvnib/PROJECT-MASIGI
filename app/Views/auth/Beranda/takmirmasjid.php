@@ -1,6 +1,5 @@
 <?= $this->extend('auth/Beranda/layout3'); ?>
 <?= $this->section('content'); ?>
-
 <!DOCTYPE html>
 <html lang="id">
 
@@ -13,25 +12,10 @@
 </head>
 
 <body>
-    <img src="/img/struktur-takmir.png" alt="">
-    <!-- <div class="struktur">
-    	<ul>
-    		<li>Penasehat</li>
-            <ul>
-                <li>Ketua
-                    <ul>
-                        <li>Sekretaris</li>
-                        <li>Bendahara</li>
-                        <li>Seksi Peribadatan</li>
-                        <li>Seksi Sarana dan Prasarana</li>
-                        <li>Seksi Pendidikan dan Kerohanian</li>
-                        <li>Seksi Humas dan Dana</li>
-                        <li>Seksi Kebersihan dan Keamanan</li>
-                    </ul>
-                </li>
-            </ul>
-    	</ul>
-    </div> -->
+    <div class="container">
+        <h1>STRUKTUR TAKMIR MASJID</h1>
+        <img src="/img/struktur-takmir.png" alt="Struktur Takmir">
+    </div>
 </body>
 
 </html>
