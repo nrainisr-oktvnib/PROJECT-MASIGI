@@ -115,7 +115,7 @@
             </div>
         </div>
         <script>
-            var images = ["img/binalipu1.jpg", "/img/binalipu4.jpg", "/img/binalipu5.jpg", "/img/binalipu6.jpg"];
+            var images = ["/img/binalipu1.jpg", "/img/binalipu4.jpg", "/img/binalipu5.jpg", "/img/binalipu6.jpg"];
             var currentImageIndex = 0;
 
             function nextImage() {
@@ -165,4 +165,5 @@
 </body>
 
 </html>
+
 <?= $this->endSection(); ?>

@@ -7,16 +7,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="sapi.css">
+    <link rel="stylesheet" type="text/css" href="/css/qurban.css">
     <title>PROJEK AKHIR WEB</title>
 </head>
 
 <body>
-
     <div class="judul">
         <h1>MUDAHKAN IBADAH QURBAN ANDA DENGAN KAMI</h1>
     </div>
-
     <section class="tipe-kambing">
         <h2 class="kambing">KAMBING</h2>
         <div class="KA">
