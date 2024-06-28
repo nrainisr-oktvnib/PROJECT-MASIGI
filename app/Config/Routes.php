@@ -6,8 +6,10 @@ use App\Controllers\Takmir;
 use App\Controllers\Jamaah;
 
 /**
- * @var RouteCollection $routes
+ * @var RouteCollection $outes
  */
+
+
 $routes->get('Jamaah/beranda', 'Jamaah::beranda');
 $routes->get('Jamaah/takmirmasjid', 'Jamaah::takmirmasjid');
 $routes->get('/', 'Jamaah::jadwal');
