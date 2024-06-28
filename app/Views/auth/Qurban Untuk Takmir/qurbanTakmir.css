@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.jadwal-petugas {
+    background-color: #fff;
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.tambah-jadwal {
+    right: 10rem;
+    margin-left: 57rem;
+}
+
+.tambah-jadwal a,
+.popup-class-btn a {
+    text-decoration: none;
+    background-color: #008CBA;
+}
+
+.jadwal {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabel {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td:last-child {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .jadwal-petugas {
+        padding: 20px;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .jadwal h2 {
+        font-size: 1.5em;
+    }
+}
+
+.edit-button, .delete-button, .add-button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.add-button {
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+@media (max-width: 600px) {
+    .jadwal-petugas {
+        padding: 20px;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .jadwal h2 {
+        font-size: 1.5em;
+    }
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-jadwal {
+    background-color: #fefefe;
+    margin: 59px;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 25%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: fadeIn 0.4s;
+}
+
+.popup-content {
+    position: relative;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+form input[type="text"]{
+    width: 95%;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.popup-btn {
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 7.9rem;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#popup:target {
+    display: flex;
+}
+
+.popup-close:link,
+.popup-close:visited {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+}
+
+.popup-close:hover,
+.popup-close:active {
+    color: #555;
+}

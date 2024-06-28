@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="qurbanTakmir.css">
+    <title>PROJEK AKHIR WEB</title>
+</head>
+
+<body>
+    <section class="jadwal-petugas">
+        <div class="jadwal">
+            <h2>Jadwal Petugas Sholat Jumat</h2>
+        </div>
+
+        <div class="tambah-jadwal">
+            <a href="#popup" class="add-button">Tambah Jadwal</a>
+        </div>
+
+        <div class="tabel">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Jenis Qurban</th>
+                        <th>Nomor Telepon</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Meliana</td>
+                        <td>Perorangan</td>
+                        <td>085241698465</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Andini Ramadhana</td>
+                        <td>Perorangan</td>
+                        <td>089476849253</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Lidia</td>
+                        <td>Perkelompok</td>
+                        <td>085794697852</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="pop" id="popup">
+        <div class="popup-jadwal">
+            <div class="popup-content">
+                <a href="#" class="popup-close">&times;</a>
+                <h3>Tambah Jadwal Sholat Jumat</h3>
+                
+                <form id="jadwalForm">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama"><br><br>
+
+                    <label for="jenis-qurban"><h4>Jenis Qurban:</h4></label>
+                    <select name="jenis" id="jenis-qurban">
+                        <option value="" disabled selected>Pilih Jenis Qurban</option>
+                        <option value="perorang">Perorang</option>
+                        <option value="perkelompok">Perkelompok</option>
+                    </select>
+
+                    <label for="no-Tlp">Nomor Telepon:</label>
+                    <input type="text" id="no-Tlp" name="no-Tlp" placeholder="Masukkan Nomor Telepon"><br><br>
+
+                    <div class="popup-class-btn">
+                        <a href="#" class="popup-btn">Simpan</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
