@@ -15,7 +15,7 @@
 <body>
     <section class="container">
         <div class="judul">
-            <h1>Penerima Donasi</h1>
+            <h1>DONASI</h1>
         </div>
         <div class="input-nama">
             <label for="nama">

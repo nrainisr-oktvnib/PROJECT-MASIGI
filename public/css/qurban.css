@@ -129,7 +129,6 @@ section {
 
 .popup-content input[type="nama-peserta"],
 .popup-content input[type="tel"],
-.popup-content input[type="alamat"],
 .popup-content select {
     width: 100%;
     padding: 10px;
@@ -140,8 +139,7 @@ section {
 }
 
 .popup-content input[type="nama-peserta"]::placeholder,
-.popup-content input[type="tel"]::placeholder,
-.popup-content input[type="alamat"]::placeholder {
+.popup-content input[type="tel"]::placeholder {
     color: #999;
 }
 
