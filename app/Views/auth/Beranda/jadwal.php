@@ -8,8 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jadwal Pelaksanaan Sholat Jumat</title>
-  <link rel="stylesheet" href="jadwal.css">
-  <link rel="stylesheet" href="/app/Views/auth/Beranda/layout3.css">
+  <link rel="stylesheet" href="/css/jadwal.css">
 </head>
 
 <body>

@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami</title>
-    <link rel="stylesheet" href="tentang.css">
+    <link rel="stylesheet" href="/css/tentang.css">
 </head>
 
 <body>
@@ -17,26 +17,26 @@
 
         <section class="introduction">
             <h2>Perkenalan</h2>
-            <p>Selamat datang di halaman Tentang Kami. Kami adalah grup pertemanan yang berkomitmen untuk menjaga kebersamaan dan saling mendukung.</p>
+            <p>Selamat datang di halaman Tentang Kami. </p>
         </section>
 
         <section class="team">
             <h2>Anggota Kami</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="/public/img/Aini.jpg" alt="Aini">
+                    <img src="/img/Aini.jpg" alt="Aini">
                     <h3>NUR AINI SRI OKTAVIANI BAHAR</h3>
                     <p>Ketua Tim</p>
                     <p>Deskripsi singkat tentang anggota ini.</p>
                 </div>
                 <div class="team-member">
-                    <img src="/public/img/Dikri.jpg" alt="Dikri">
+                    <img src="/img/Dikri.jpg" alt="Dikri">
                     <h3>DIKRIANI</h3>
                     <p>Anggota 1</p>
                     <p>Deskripsi singkat tentang anggota ini.</p>
                 </div>
                 <div class="team-member">
-                    <img src="/public/img/Imel.jpg" alt="Imel">
+                    <img src="/img/Imel.jpg" alt="Imel">
                     <h3>MELISAH</h3>
                     <p>Anggota 2</p>
                     <p>Deskripsi singkat tentang anggota ini.</p>
@@ -48,7 +48,15 @@
             <h2>Kontak Kami</h2>
             <p>Email: wargaITH@gmail.com</p>
             <p>Telepon: +6282 934 342 931</p>
+<<<<<<< HEAD
+            <p>Alamat: Jl. Balaikota No.1, Bumi Harapan, Kec. Bacukiki Barat,
+=======
+<<<<<<< HEAD:app/Views/auth/Beranda/tentang.html
+            <p>Alamat: Jl. Balaikota No.1, Bumi Harapan, Kec. Bacukiki Barat, 
+=======
             <p>Alamat: Jl. Balaikota No.1, Bumi Harapan, Kec. Bacukiki Bar.,
+>>>>>>> 85e087283c12980e982e23cb1a8c05e38251b1a0:app/Views/auth/Beranda/tentang.php
+>>>>>>> main
                 Kota Parepare, Sulawesi Selatan 91125</p>
             <p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.9573582876014!2d119.63291530000001!3d-4.02912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95bb6f319bdcc3%3A0x72bba788ec9d951f!2sJl.%20Balaikota%20No.1%2C%20Bumi%20Harapan%2C%20Kec.%20Bacukiki%20Bar.%2C%20Kota%20Parepare%2C%20Sulawesi%20Selatan%2091125!5e0!3m2!1sid!2sid!4v1718173974072!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

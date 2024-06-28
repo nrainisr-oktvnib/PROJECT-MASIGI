@@ -1,56 +1,68 @@
 body {
-    font-family: 'Roboto', sans-serif; 
-    background: linear-gradient(to right, #6f5300, #a27d0d); 
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #be8f19;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    max-width: 100%;
     margin: 0;
+    background-attachment: fixed;
 }
-
 
 .container {
     background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
-    border-radius: 12px; 
+    padding: 30px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
     width: 100%;
-    max-width: 800px;
-    transition: transform 0.2s; 
+    max-width: 900px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 9%;
+    margin-top: 2%;
 }
 
 .container:hover {
-    transform: scale(1.05); 
+    transform: rotate(-1deg);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 25px;
-    font-size: 2em; 
-    color: #e2b952;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #d2691e;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-
-ol {
-    margin-left: 40px;
-    font-size: 1.1em; 
-}
-
-a {
+h1::after {
+    content: '';
     display: block;
-    text-align: center;
-    margin-top: 25px;
-    color: #ffffff;
-    background-color: #e2b952;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s; 
+    width: 50%;
+    height: 3px;
+    background: #d2691e;
+    margin: 10px auto 0;
 }
 
-a:hover {
-    background-color: #8e712a;
-    text-decoration: none;
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #000000;
+    position: relative;
 }
+
+p::before {
+    content: open-quote;
+    font-size: 4em;
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    color: #d2691e;
+}
+
+
