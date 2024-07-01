@@ -42,7 +42,7 @@
 
             <div class="zakat-bayar">
                 <label for="byr">
-                    <h4>Nominal:</h4>
+                    <h4>Jumlah(Rp/Kg):</h4>
                 </label>
                 <input type="byr" nama="byr" id="byr" placeholder="Masukkan Nominal Pembayaran">
             </div>
